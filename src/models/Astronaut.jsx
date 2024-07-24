@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
-import astronaut_scene from "../assets/3d/astronaut.glb";
+import astronaut_scene from "../assets/3D_Models/astronaut.glb";
 
 const Astronaut = () => {
   const astronaut_ref = useRef();

@@ -8,7 +8,7 @@ Title: Blackhole
 import React, { useEffect, useRef } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 
-import blackHole_scene from "../assets/3d/blackhole.glb";
+import blackHole_scene from "../assets/3D_Models/blackhole.glb";
 
 const BlackHole = () => {
   const blackHole_ref = useRef();

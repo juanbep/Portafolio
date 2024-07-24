@@ -12,7 +12,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { a } from "@react-spring/three";
 
-import spaceBoy_scene from "../assets/3d/space_boi.glb";
+import spaceBoy_scene from "../assets/3D_Models/space_boi.glb";
 
 const SpaceBoy = ({
   isRotating,

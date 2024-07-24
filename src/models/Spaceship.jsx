@@ -8,7 +8,7 @@ Title: X -WING
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-import spaceship_scene from "../assets/3d/spaceship.glb";
+import spaceship_scene from "../assets/3D_Models/spaceship.glb";
 
 const SpaceShip = ({ isRotating, ...props }) => {
   const spaceship_ref = useRef();

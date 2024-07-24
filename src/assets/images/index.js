@@ -1,9 +1,9 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
-import logo from './logo.svg'
+import hero from './jpg/hero.jpg'
+import meta from './png/meta.png'
+import shopify from './png/shopify.png'
+import starbucks from './png/starbucks.png'
+import tesla from './png/tesla.png'
+import logo from './svg/logo.svg'
 
 export {
     hero,

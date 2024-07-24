@@ -79,8 +79,8 @@ const Home = () => {
             groundColor="#464342"
             intensity={2}
           />  */}
-          {/* <BlackHole /> */}
-          <Astronaut />
+          {/* <BlackHole />
+          <Astronaut /> */}
           <SpaceBoy
             isRotating={isRotating}
             setIsRotating={setIsRotating}
