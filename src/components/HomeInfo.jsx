@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Lottie, { useLottie } from "lottie-react";
-import { arrow } from "../assets/icons";
-import clicAnimation from "../assets/icons/json/clicAnimation.json";
+import clicAnimation from "../assets/icons/clicAnimation.json";
 
 const HomeInfo = ({ currentStage }) => {
   const style = {
@@ -25,10 +24,19 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-purple py-4 px-8 text-black mx-5">
         Hola, Soy Juan David
-        <span className="font-semibold mx-2 text-black">Beca</span>
+        <span className="font-semibold mx-2">Beca</span>
         👋
         <br />
-        Ingeniero de sistemas de la Universidad del Cauca
+        Estudiante de ingeniería de sistemas de la
+        <span className="font-semibold mx-2 inline-flex items-center">
+          Universidad del Cauca
+          {/* <img
+            src={torch}
+            alt="torch"
+            className="w-6 h-6 object-contain ml-2"
+          /> */}
+        </span>
+        👨‍💻
       </h1>
     );
 
@@ -75,15 +83,13 @@ const HomeInfo = ({ currentStage }) => {
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
           ¿Necesitas realizar un proyecto o buscas un desarrollador?
-          <br />
-          ¡Házmelo saber con tan solo un clic!
         </p>
 
         <Link
           to="/contact"
           className="flex items-center justify-center font-bold underline text-black-500"
         >
-          Contáctame
+          ¡Házmelo saber!
           {View}
         </Link>
       </div>
