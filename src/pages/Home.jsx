@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 import SpaceBoy from "../models/SpaceBoy";
@@ -52,7 +52,7 @@ const Home = () => {
         className="absolute bottom-28 left-0 right-0 z-10 flex
       items-center justify-center"
       >
-         {currentStage && <HomeInfo  currentStage={currentStage} />}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${
@@ -79,8 +79,8 @@ const Home = () => {
             groundColor="#464342"
             intensity={2}
           />  */}
-          {/* <BlackHole />
-          <Astronaut /> */}
+          {/* <BlackHole /> */}
+          {/* <Astronaut /> */}
           <SpaceBoy
             isRotating={isRotating}
             setIsRotating={setIsRotating}
@@ -89,12 +89,12 @@ const Home = () => {
             scale={spaceBoyScale}
             rotation={[0.1, 6, 0]}
           />
-          {/* <Spaceship
+          <Spaceship
             isRotating={isRotating}
             position={spaceshipPosition}
             scale={spaceshipScale}
             rotation={[0.1, -1.2, -0.4]}
-          /> */}
+          />
         </Suspense>
       </Canvas>
     </section>

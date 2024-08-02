@@ -1,14 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
-import { FaUserAstronaut, FaLinkedin } from "react-icons/fa";
+import { FaUserAstronaut, FaLinkedin, FaDownload } from "react-icons/fa";
 import { GoRocket } from "react-icons/go";
-import { RiMessage2Line } from "react-icons/ri";
-import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { AiFillHome, AiOutlineMenu, AiOutlineMessage } from "react-icons/ai";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   const nodeRef = useRef(null);
+  const contactNodeRef = useRef(null);
 
   return (
     <header className="header">
@@ -49,7 +52,6 @@ const Navbar = () => {
               {[
                 { to: "/about", icon: FaUserAstronaut, label: "Sobre mí" },
                 { to: "/projects", icon: GoRocket, label: "Proyectos" },
-                { to: "/contact", icon: RiMessage2Line, label: "Contacto" },
               ].map((item, index) => (
                 <li key={index}>
                   <NavLink
@@ -64,19 +66,91 @@ const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
+              <li
+                className="relative"
+                onMouseEnter={() => setContactOpen(true)}
+                onMouseLeave={() => setContactOpen(false)}
+              >
+                <button
+                  className="flex items-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setContactOpen(!contactOpen);
+                  }}
+                >
+                  <AiOutlineMessage
+                    className="mr-2 object-contain"
+                    aria-hidden="true"
+                  />
+                  <span className="font-semibold">Contacto</span>
+                </button>
+                <CSSTransition
+                  in={contactOpen}
+                  timeout={100}
+                  classNames="fade"
+                  unmountOnExit
+                  nodeRef={contactNodeRef}
+                >
+                  <div
+                    ref={contactNodeRef}
+                    className="absolute right-full top-0 mr-2 w-35 bg-white rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+                  >
+                    <ul className="py-2 text-sm text-black-700 dark:text-gray-200">
+                      <li>
+                        <a
+                          href="https://wa.me/1234567890"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <IoLogoWhatsapp
+                            className="mr-2 object-contain"
+                            aria-hidden="true"
+                          />
+                          WhatsApp
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="mailto:jbecapillimue@gmail.com"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <SiGmail
+                            className="mr-2 object-contain"
+                            aria-hidden="true"
+                          />
+                          Correo
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/juan-david-beca-pillimue-aa3168207/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >
+                          <FaLinkedin
+                            className="mr-2 object-contain"
+                            aria-hidden="true"
+                          />
+                          LinkedIn
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </CSSTransition>
+              </li>
             </ul>
             <div className="py-2">
               <a
-                href="https://www.linkedin.com/in/juan-david-beca-pillimue-aa3168207/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/"
                 className="flex items-center px-4 py-2 text-base text-black-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
               >
-                <FaLinkedin
+                <FaDownload
                   className="mr-2 object-contain"
                   aria-hidden="true"
                 />
-                LinkedIn
+                Currículum
               </a>
             </div>
           </div>
