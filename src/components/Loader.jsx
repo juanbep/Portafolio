@@ -1,10 +1,17 @@
 import { Html } from "@react-three/drei";
+import Lottie from "react-lottie-player";
+import loading from "../assets/icons/loading.json";
 
 const Loader = () => {
   return (
-    <Html>
+    <Html center>
       <div className="flex justify-center items-center">
-        <div className="w-20 h-20 border-2 border-opacity-20 border-blue-500 border-t-blue-500 rounded-full animate-spin"></div>
+        <Lottie
+          loop
+          animationData={loading}
+          play
+          style={{ width: 100, height: 100 }}
+        />
       </div>
     </Html>
   );
