@@ -42,8 +42,26 @@ const Home = () => {
     return [screenScale, screenPosition];
   };
 
+  const adjustBlackHoleForScreenSize = () => {
+    let screenScale, screenPosition, screenRotation;
+
+    // Si el ancho de la pantalla es inferior a 768px, ajusta la escala y la posición
+    if (window.innerWidth < 768) {
+      screenScale = [0.2, 0.2, 0.2];
+      screenPosition = [2, 3.5, -3];
+      screenRotation = [1, 0.5, 1];
+    } else {
+      screenScale = [0.3, 0.3, 0.3];
+      screenPosition = [12, 3, -5];
+      screenRotation = [-0.5, 0.2, 1.5];
+    }
+
+    return [screenScale, screenPosition, screenRotation];
+  };
+
   const [spaceBoyScale, spaceBoyPosition] = adjustSpaceBoyForScreenSize();
   const [spaceshipScale, spaceshipPosition] = adjustSpaceshipForScreenSize();
+  const [blackHoleScale, blackHolePosition, blackHoleRotation] = adjustBlackHoleForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
@@ -79,7 +97,11 @@ const Home = () => {
             groundColor="#464342"
             intensity={2}
           />  */}
-          {/* <BlackHole /> */}
+          <BlackHole 
+          position = {blackHolePosition}
+          scale = {blackHoleScale}
+          rotation = {blackHoleRotation}
+          />
           {/* <Astronaut /> */}
           <SpaceBoy
             isRotating={isRotating}
