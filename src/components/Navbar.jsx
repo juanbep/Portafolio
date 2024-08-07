@@ -46,9 +46,9 @@ const Navbar = () => {
         >
           <div
             ref={nodeRef}
-            className="absolute right-0 mt-2 w-40 bg-white divide-y divide-gray-300 rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+            className="absolute right-0 mt-2 w-40 bg-white divide-y divide-gray-300 rounded-lg shadow-light"
           >
-            <ul className="py-2 text-base text-black-700 dark:text-gray-200">
+            <ul className="py-2 text-base text-black">
               {[
                 { to: "/about", icon: FaUserAstronaut, label: "Sobre mí" },
                 { to: "/projects", icon: GoRocket, label: "Proyectos" },
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <li key={index}>
                   <NavLink
                     to={item.to}
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-gray-100"
                   >
                     <item.icon
                       className="mr-2 object-contain"
@@ -72,7 +72,7 @@ const Navbar = () => {
                 onMouseLeave={() => setContactOpen(false)}
               >
                 <button
-                  className="flex items-center w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  className="flex items-center w-full px-4 py-2 hover:bg-gray-100"
                   onClick={(e) => {
                     e.preventDefault();
                     setContactOpen(!contactOpen);
@@ -93,15 +93,15 @@ const Navbar = () => {
                 >
                   <div
                     ref={contactNodeRef}
-                    className="absolute right-full top-0 mr-2 w-35 bg-white rounded-lg shadow-lg dark:bg-gray-700 dark:divide-gray-600"
+                    className="absolute right-full top-0 mr-2 w-35 bg-white rounded-lg shadow-light"
                   >
-                    <ul className="py-2 text-sm text-black-700 dark:text-gray-200">
+                    <ul className="py-2 text-sm text-black">
                       <li>
                         <a
                           href="https://wa.me/1234567890"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100"
                         >
                           <IoLogoWhatsapp
                             className="mr-2 object-contain"
@@ -113,7 +113,7 @@ const Navbar = () => {
                       <li>
                         <a
                           href="mailto:jbecapillimue@gmail.com"
-                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100"
                         >
                           <SiGmail
                             className="mr-2 object-contain"
@@ -127,7 +127,7 @@ const Navbar = () => {
                           href="https://www.linkedin.com/in/juan-david-beca-pillimue-aa3168207/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                          className="flex items-center px-4 py-2 hover:bg-gray-100"
                         >
                           <FaLinkedin
                             className="mr-2 object-contain"
@@ -144,7 +144,7 @@ const Navbar = () => {
             <div className="py-2">
               <a
                 href="/"
-                className="flex items-center px-4 py-2 text-base text-black-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                className="flex items-center px-4 py-2 text-base text-black hover:bg-gray-100"
               >
                 <FaDownload
                   className="mr-2 object-contain"
