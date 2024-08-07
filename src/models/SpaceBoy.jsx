@@ -166,7 +166,7 @@ const SpaceBoy = ({
 
       spaceBoy_ref.current.rotation.y += rotationSpeed.current;
     } else {
-      // When rotating, determine the current stage based on island's orientation
+      // When rotating, determine the current stage based on 3D model's orientation
       const rotation = spaceBoy_ref.current.rotation.y;
       /**
        * Normalize the rotation value to ensure it stays within the range [0, 2 * Math.PI].
@@ -186,18 +186,19 @@ const SpaceBoy = ({
        */
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
-      // Set the current stage based on the island's orientation
+      // Set the current stage based on the 3D model's orientation
+      console.log(normalizedRotation);
       switch (true) {
-        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+        case normalizedRotation >= 1.16 && normalizedRotation <= 1.36:
           setCurrentStage(4);
           break;
-        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+        case normalizedRotation >= 2.73 && normalizedRotation <= 2.93:
           setCurrentStage(3);
           break;
-        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+        case normalizedRotation >= 4.3 && normalizedRotation <= 4.5:
           setCurrentStage(2);
           break;
-        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+        case normalizedRotation >= 5.9 && normalizedRotation <= 6.1:
           setCurrentStage(1);
           break;
         default:
@@ -224,9 +225,9 @@ const SpaceBoy = ({
           />
         </a.group>
         <a.group
-          position={[-250, 442, 600]}
+          position={[-160, 500, -500]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={39.706}
+          scale={60.324}
         >
           <mesh
             castShadow
@@ -242,9 +243,9 @@ const SpaceBoy = ({
           />
         </a.group>
         <a.group
-          position={[350, 442, -600]}
+          position={[-500, 500, 160]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={39.706}
+          scale={60.324}
         >
           <mesh
             castShadow
@@ -289,7 +290,7 @@ const SpaceBoy = ({
           receiveShadow
           geometry={nodes.Sphere_Material001_0.geometry}
           material={materials["Material.001"]}
-          position={[450, 442, 300]}
+          position={[160, 500, 500]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={62.402}
         />
@@ -298,7 +299,7 @@ const SpaceBoy = ({
           receiveShadow
           geometry={nodes.Sphere001_Material002_0.geometry}
           material={materials["Material.002"]}
-          position={[450, 442, 300]}
+          position={[160, 500, 500]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={60.324}
         />
@@ -307,7 +308,7 @@ const SpaceBoy = ({
           receiveShadow
           geometry={nodes.Sphere004_Material002_0.geometry}
           material={materials["Material.002"]}
-          position={[450, 442, 300]}
+          position={[160, 500, 500]}
           rotation={[-0.688, 0, 0]}
           scale={[104.129, 81.609, 0]}
         />
@@ -316,7 +317,7 @@ const SpaceBoy = ({
           receiveShadow
           geometry={nodes.Sphere005_Material001_0.geometry}
           material={materials["Material.001"]}
-          position={[-450, 442, -300]}
+          position={[500, 500, -160]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={62.402}
         />
@@ -325,54 +326,27 @@ const SpaceBoy = ({
           receiveShadow
           geometry={nodes.Sphere006_Material002_0.geometry}
           material={materials["Material.002"]}
-          position={[-450, 442, -300]}
+          position={[500, 500, -160]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={60.324}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Sphere009_Material002_0.geometry}
-          material={materials["Material.002"]}
-          position={[510, 575, -215]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={16.881}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Sphere010_Material002_0.geometry}
-          material={materials["Material.002"]}
-          position={[-480, 500, 280]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={16.881}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Sphere011_Material002_0.geometry}
-          material={materials["Material.002"]}
-          position={[-100, 420, -600]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={11.437}
-        />
-        <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.Sphere003_Material002_0.geometry}
           material={materials["Material.002"]}
-          position={[-250, 442, 600]}
+          position={[-500, 500, 160]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={41.075}
+          scale={62.402}
         />
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Sphere008_Material002_0.geometry}
           material={materials["Material.002"]}
-          position={[350, 442, -600]}
+          position={[-160, 500, -500]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={41.075}
+          scale={62.402}
         />
       </a.group>
     </a.group>
