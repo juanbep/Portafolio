@@ -5,7 +5,7 @@ import { Home, About, Projects } from "./pages";
 
 const App = () => {
   return (
-    <main className="bg-white dark:hover:bg-gray-700">
+    <main className="bg-slate-200 dark:bg-gray-700">
       <Router>
         <Navbar />
         <Routes>

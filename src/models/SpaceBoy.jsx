@@ -187,7 +187,6 @@ const SpaceBoy = ({
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
       // Set the current stage based on the 3D model's orientation
-      console.log(normalizedRotation);
       switch (true) {
         case normalizedRotation >= 1.16 && normalizedRotation <= 1.36:
           setCurrentStage(4);

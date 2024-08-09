@@ -98,34 +98,56 @@ body:has(.card[data-color="green"]:hover) {
         0px 1.5px 4px -1px rgba(67, 83, 255, 0.2);
 }
 
-.block-container {
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tooltip {
     position: relative;
-    transition: 250ms;
-    perspective: 500px;
+    display: inline-block;
 }
 
-.block-container .btn-front {
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.630);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
     position: absolute;
-    inset: 0;
     z-index: 1;
-    width: inherit;
-    height: inherit;
-    background-color: white;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    transition: 250ms;
-    transform-style: preserve-3d;
-    transform-origin: top left;
-    overflow: hidden;
+    bottom: 85%;
+    left: 50%;
+    margin-left: -60px;
 }
 
-@media (prefers-color-scheme: light) {
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.630) transparent transparent transparent;
+}
 
-    .block-container .btn-front,
-    .btn-navbar,
-    .shadow-light {
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 .block-container .btn-back-red {
@@ -158,10 +180,6 @@ body:has(.card[data-color="green"]:hover) {
 
 .block-container:hover>.btn-back {
     transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
-}
-
-.block-container:hover>.btn-front {
-    transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
 
 .neo-brutalism-purple {

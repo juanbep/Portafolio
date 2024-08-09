@@ -46,7 +46,7 @@ const Navbar = () => {
         >
           <div
             ref={nodeRef}
-            className="absolute right-0 mt-2 w-40 bg-white divide-y divide-gray-300 rounded-lg shadow-light"
+            className="absolute right-0 mt-2 w-40 bg-white divide-y divide-gray-300 rounded-lg"
           >
             <ul className="py-2 text-base text-black">
               {[
@@ -93,12 +93,12 @@ const Navbar = () => {
                 >
                   <div
                     ref={contactNodeRef}
-                    className="absolute right-full top-0 mr-2 w-35 bg-white rounded-lg shadow-light"
+                    className="absolute right-full top-0 mr-2 w-35 bg-white rounded-lg"
                   >
                     <ul className="py-2 text-sm text-black">
                       <li>
                         <a
-                          href="https://wa.me/1234567890"
+                          href="https://api.whatsapp.com/send?phone=573206440761"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center px-4 py-2 hover:bg-gray-100"
