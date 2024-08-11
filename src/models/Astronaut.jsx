@@ -1,6 +1,6 @@
 /*"Animated Astronaut in Space Suit Loop" (https://skfb.ly/o9UDY) by LasquetiSpice
 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).*/
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 

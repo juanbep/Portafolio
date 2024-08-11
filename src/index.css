@@ -104,12 +104,10 @@ body:has(.card[data-color="green"]:hover) {
     gap: 10px;
     width: 90%;
     max-width: 1200px;
+    align-items: center;
 }
 
 .icon-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
     border-radius: 8px;
     padding: 20px;

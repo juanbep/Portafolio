@@ -1,12 +1,11 @@
 import { useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import Loader from "../components/Loader";
+import { Loader, HomeInfo } from "../components";
 import SpaceBoy from "../models/SpaceBoy";
 import Space from "../models/Space";
 import Spaceship from "../models/Spaceship";
 import BlackHole from "../models/BlackHole";
-import Astronaut from "../models/Astronaut";
-import HomeInfo from "../components/HomeInfo";
+// import Astronaut from "../models/Astronaut";
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -61,7 +60,8 @@ const Home = () => {
 
   const [spaceBoyScale, spaceBoyPosition] = adjustSpaceBoyForScreenSize();
   const [spaceshipScale, spaceshipPosition] = adjustSpaceshipForScreenSize();
-  const [blackHoleScale, blackHolePosition, blackHoleRotation] = adjustBlackHoleForScreenSize();
+  const [blackHoleScale, blackHolePosition, blackHoleRotation] =
+    adjustBlackHoleForScreenSize();
 
   return (
     <section className="w-full h-screen relative">
@@ -97,10 +97,10 @@ const Home = () => {
             groundColor="#464342"
             intensity={2}
           />  */}
-          <BlackHole 
-          position = {blackHolePosition}
-          scale = {blackHoleScale}
-          rotation = {blackHoleRotation}
+          <BlackHole
+            position={blackHolePosition}
+            scale={blackHoleScale}
+            rotation={blackHoleRotation}
           />
           {/* <Astronaut /> */}
           <SpaceBoy

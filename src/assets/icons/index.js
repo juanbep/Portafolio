@@ -11,6 +11,7 @@ import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
 import typescript from "./typescript.svg";
 import twitter from "./twitter.svg";
+import unicauca from "./unicauca.svg";
 
 export {
   css,
@@ -26,4 +27,5 @@ export {
   tailwindcss,
   typescript,
   twitter,
+  unicauca,
 };
