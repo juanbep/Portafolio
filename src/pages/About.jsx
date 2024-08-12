@@ -5,6 +5,7 @@ import {
 
 import { skills, experiences } from "../constants";
 import { Footer } from "../components";
+import ParticlesComponent from "../hooks/particles";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -107,7 +108,8 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
-      <hr className="border-slate-300" /><br />
+      <hr className="border-slate-300" />
+      <br />
       <Footer />
     </section>
   );

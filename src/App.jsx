@@ -2,6 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, About, Projects } from "./pages";
+import ParticlesComponent from "./hooks/particles";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<><About /><ParticlesComponent /></>}/>
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
