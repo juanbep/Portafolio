@@ -1,20 +1,20 @@
-import React from "react";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, About, Projects } from "./pages";
 import ParticlesComponent from "./hooks/particles";
 
 const App = () => {
+  const location = useLocation();
+
   return (
-    <main className="bg-slate-200 dark:bg-gray-700">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<><About /><ParticlesComponent /></>}/>
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </Router>
+    <main className="bg-black-500 relative">
+      {/* {location.pathname !== "/" && <ParticlesComponent />} */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </main>
   );
 };

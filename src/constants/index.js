@@ -5,7 +5,6 @@ import {
   github,
   html,
   javascript,
-  nextjs,
   nodejs,
   react,
   redux,
@@ -13,6 +12,17 @@ import {
   tailwindcss,
   typescript,
   unicauca,
+  angular,
+  bootstrap,
+  graphql,
+  java,
+  jest,
+  php,
+  python,
+  rxjs,
+  webpack,
+  mongodb,
+  springboot,
 } from "../assets/icons";
 
 export const skills = [
@@ -20,11 +30,6 @@ export const skills = [
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
-  },
-  {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
   },
   {
     imageUrl: html,
@@ -37,9 +42,14 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: nextjs,
-    name: "Next.js",
+    imageUrl: typescript,
+    name: "TypeScript",
     type: "Frontend",
+  },
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
   },
   {
     imageUrl: nodejs,
@@ -67,8 +77,58 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: typescript,
-    name: "TypeScript",
+    imageUrl: rxjs,
+    name: "RxJS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: webpack,
+    name: "Webpack",
+    type: "Frontend",
+  },
+  {
+    imageUrl: angular,
+    name: "Angular",
+    type: "Frontend",
+  },
+  {
+    imageUrl: bootstrap,
+    name: "Bootstrap",
+    type: "Frontend",
+  },
+  {
+    imageUrl: graphql,
+    name: "GraphQL",
+    type: "Frontend",
+  },
+  {
+    imageUrl: java,
+    name: "Java",
+    type: "Frontend",
+  },
+  {
+    imageUrl: jest,
+    name: "Jest",
+    type: "Frontend",
+  },
+  {
+    imageUrl: php,
+    name: "PHP",
+    type: "Frontend",
+  },
+  {
+    imageUrl: python,
+    name: "Python",
+    type: "Frontend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Frontend",
+  },
+  {
+    imageUrl: springboot,
+    name: "Spring Boot",
     type: "Frontend",
   },
 ];

@@ -12,7 +12,7 @@ import "react-vertical-timeline-component/style.min.css";
 const About = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text dark:text-white">
+      <h1 className="head-text text-white">
         Hola, Soy{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
@@ -20,7 +20,7 @@ const About = () => {
         </span>{" "}
       </h1>
 
-      <div className="mt-5 flex flex-col gap-3 dark:text-white">
+      <div className="mt-5 flex flex-col gap-3 text-white">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
           quibusdam ab repellendus, error fugiat quia sint libero! Cumque
@@ -29,7 +29,7 @@ const About = () => {
         </p>
       </div>
       <div className="mt-10 flex flex-col gap-3">
-        <h3 className="subhead-text dark:text-white">Mis Habilidades</h3>
+        <h3 className="subhead-text text-white">Mis Habilidades</h3>
       </div>
       <div className="mt-10 flex flex-col items-center">
         <div className="icon-grid">
@@ -49,8 +49,8 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="subhead-text dark:text-white">Experiencia</h3>
-        <div className="mt-5 flex flex-col gap-3 dark:text-white">
+        <h3 className="subhead-text text-white">Experiencia</h3>
+        <div className="mt-5 flex flex-col gap-3 text-white">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             tempore accusamus officia beatae incidunt recusandae dolor optio

@@ -48,10 +48,10 @@ const App = () => {
       },
       particles: {
         color: {
-          value: "#000000",
+          value: "#ffffff",
         },
         links: {
-          color: "#000000",
+          color: "#ffffff",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -94,6 +94,12 @@ const App = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        style={{
+          position: "absolute",
+          zIndex: -1,
+          width: "100%",
+          height: "100%",
+        }}
       />
     );
   }
