@@ -107,7 +107,7 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
-      {/* <hr className="border-slate-950" /> */}
+      <hr className="border-slate-300" /><br />
       <Footer />
     </section>
   );
