@@ -2,11 +2,10 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 import { skills, experiences } from "../constants";
 import { Footer } from "../components";
-
-import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
@@ -59,7 +58,7 @@ const About = () => {
         </div>
 
         <div className="mt-12 flex">
-          <VerticalTimeline>
+          <VerticalTimeline animate={false}>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
                 key={experience.company_name + index}
