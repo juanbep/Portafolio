@@ -26,16 +26,6 @@ const App = () => {
       },
       fpsLimit: 120,
       interactivity: {
-        events: {
-          onClick: {
-            enable: false,
-            mode: "push",
-          },
-          onHover: {
-            enable: false,
-            mode: "repulse",
-          },
-        },
         modes: {
           push: {
             quantity: 4,

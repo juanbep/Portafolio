@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <main className="bg-black-500 relative">
-      {/* {location.pathname !== "/" && <ParticlesComponent />} */}
+      {location.pathname !== "/" && <ParticlesComponent />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

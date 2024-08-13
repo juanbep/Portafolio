@@ -5,7 +5,6 @@ import {
 
 import { skills, experiences } from "../constants";
 import { Footer } from "../components";
-import ParticlesComponent from "../hooks/particles";
 
 import "react-vertical-timeline-component/style.min.css";
 
