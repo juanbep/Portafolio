@@ -60,7 +60,7 @@ const About = () => {
           </div>
 
           <div className="mt-12 flex">
-            <VerticalTimeline animate={false}>
+            <VerticalTimeline animate={true}>
               {experiences.map((experience, index) => (
                 <VerticalTimelineElement
                   key={index}
