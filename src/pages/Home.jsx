@@ -5,7 +5,6 @@ import SpaceBoy from "../models/SpaceBoy";
 import Space from "../models/Space";
 import Spaceship from "../models/Spaceship";
 import BlackHole from "../models/BlackHole";
-// import Astronaut from "../models/Astronaut";
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -85,24 +84,11 @@ const Home = () => {
             color={"#FFFFFF"}
           />
           <ambientLight intensity={1.0} />
-          {/* <pointLight position={[-3, 4, 6]} intensity={3} />
-          <spotLight
-            position={[-2, 3, 4]}
-            angle={0.15}
-            penumbra={5}
-            intensity={5}
-          />
-          <hemisphereLight
-            skyColor="#464342"
-            groundColor="#464342"
-            intensity={2}
-          />  */}
           <BlackHole
             position={blackHolePosition}
             scale={blackHoleScale}
             rotation={blackHoleRotation}
           />
-          {/* <Astronaut /> */}
           <SpaceBoy
             isRotating={isRotating}
             setIsRotating={setIsRotating}

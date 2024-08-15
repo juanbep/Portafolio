@@ -26,6 +26,16 @@ const App = () => {
       },
       fpsLimit: 120,
       interactivity: {
+        events: {
+          onClick: {
+            enable: false,
+            mode: "push",
+          },
+          onHover: {
+            enable: false,
+            mode: "repulse",
+          },
+        },
         modes: {
           push: {
             quantity: 4,
@@ -84,15 +94,10 @@ const App = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        style={{
-          position: "absolute",
-          zIndex: -1,
-          width: "100%",
-          height: "100%",
-        }}
       />
     );
   }
+
   return <></>;
 };
 

@@ -85,7 +85,7 @@ const HomeInfo = ({ currentStage }) => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .pauseFor(2000)
+                .pauseFor(1500)
                 .typeString("¡No dudes en contactarme!")
                 .start();
             }}

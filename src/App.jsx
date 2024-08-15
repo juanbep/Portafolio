@@ -1,20 +1,27 @@
-import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navbar } from "./components";
 import { Home, About, Projects } from "./pages";
-import ParticlesComponent from "./hooks/particles";
 
 const App = () => {
-  const location = useLocation();
-
   return (
-    <main className="bg-black-500 relative">
-      {location.pathname !== "/" && <ParticlesComponent />}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+    <main>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/*"
+            element={
+              <>
+                <Routes>
+                  <Route path="/about" element={<About />} />
+                  <Route path="/projects" element={<Projects />} />
+                </Routes>
+              </>
+            }
+          />
+        </Routes>
+      </Router>
     </main>
   );
 };
