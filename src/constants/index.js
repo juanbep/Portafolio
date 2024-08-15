@@ -141,7 +141,8 @@ export const experiences = [
     iconBg: "#accbe1",
     date: "feb. 2024 - jun. 2024",
     points: [
-      `En mi rol como Monitor Administrativo en la Sala de Sistemas de la Facultad de Ciencias Humanas y Sociales de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
+      `
+      En mi rol como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias Humanas y Sociales de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
       Esta experiencia no solo me permitió desarrollar habilidades técnicas, sino también fortalecer mis competencias interpersonales y comunicativas.`,
     ],
   },
@@ -150,12 +151,12 @@ export const experiences = [
     company_name: "Universidad del Cauca",
     icon: unicauca,
     iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    date: "oct. 2023 - dic. 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      `
+      En mi rol como monitor administrativo en la Universidad del Cauca, participé en el proceso de renovación de la Acreditación y Certificación Institucional del programa de Licenciatura en Etnoeducación.
+      Entre mis principales responsabilidades se encontraba la creación y gestión de bases de datos de egresados, el diseño y aplicación de encuestas, así como la elaboración de reportes estadísticos mediante representaciones gráficas. 
+      Esta experiencia fue clave para fortalecer mis habilidades técnicas, analíticas y de gestión de la información.`,
     ],
   },
   {
@@ -163,12 +164,11 @@ export const experiences = [
     company_name: "Universidad del Cauca",
     icon: unicauca,
     iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
+    date: "mar. 2023 - jun. 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      ` 
+      En mi rol como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias de la Salud de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
+      Esta experiencia no solo me permitió desarrollar habilidades técnicas, sino también fortalecer mis competencias interpersonales y comunicativas.`,
     ],
   },
 ];

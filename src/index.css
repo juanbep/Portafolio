@@ -148,38 +148,6 @@ body:has(.card[data-color="green"]:hover) {
     visibility: visible;
 }
 
-.block-container .btn-back-red {
-    background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
-}
-
-.block-container .btn-back-green {
-    background: linear-gradient(135deg, #adfda2 -20%, #11d3f3 120%);
-}
-
-.block-container .btn-back-yellow {
-    background: linear-gradient(135deg, #f7971e -20%, #ffd200 120%);
-}
-
-.block-container .btn-back-blue {
-    background: linear-gradient(135deg, #0061ff -20%, #60efff 120%);
-}
-
-.block-container .btn-back-orange {
-    background: linear-gradient(135deg, #ff0f7b -20%, #f89b29 120%);
-}
-
-.block-container .btn-back-pink {
-    background: linear-gradient(135deg, #e81cff -20%, #40c9ff 120%);
-}
-
-.block-container .btn-back-black {
-    background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
-}
-
-.block-container:hover>.btn-back {
-    transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
-}
-
 .neo-brutalism-purple {
     background: #ffffff;
     position: relative;
@@ -192,12 +160,11 @@ body:has(.card[data-color="green"]:hover) {
         rgba(128, 0, 128, 0.05) 25px 25px;
 }
 
-
 @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns .vertical-timeline-element .vertical-timeline-element-content .vertical-timeline-element-date {
         color: rgb(255, 255, 255) !important;
         font-size: 14px;
-        font-weight: normal;
+        font-weight: 400;
         font-family: "Work Sans", sans-serif !important;
         opacity: 1 !important;
     }
