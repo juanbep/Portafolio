@@ -34,7 +34,7 @@ const Footer = () => {
         >
           <h4 className="font-semibold">Designed by:</h4>
           <p>Juan David Beca</p>
-          <div className="flex justify-center items-center space-x-2 mt-2">
+          <div className="flex justify-center items-center space-x-3 mt-2">
             <a
               href="https://github.com/juanbep"
               target="_blank"

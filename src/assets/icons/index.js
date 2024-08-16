@@ -9,19 +9,19 @@ import redux from "./redux.svg";
 import sass from "./sass.svg";
 import tailwindcss from "./tailwindcss.svg";
 import typescript from "./typescript.svg";
-import twitter from "./twitter.svg";
 import unicauca from "./unicauca.svg";
 import angular from "./angular.svg";
 import bootstrap from "./bootstrap.svg";
 import graphql from "./graphql.svg";
 import java from "./java.svg";
-import jest from "./jest.svg";
 import php from "./php.svg";
 import python from "./python.svg";
 import rxjs from "./rxjs.svg";
 import webpack from "./webpack.svg";
 import springboot from "./springboot.svg";
 import mongodb from "./mongodb.svg";
+import mysql from "./mysql.svg";
+import postgresql from "./postgresql.svg";
 
 export {
   css,
@@ -35,17 +35,17 @@ export {
   sass,
   tailwindcss,
   typescript,
-  twitter,
   unicauca,
   angular,
   bootstrap,
   graphql,
   java,
-  jest,
   php,
   python,
   rxjs,
   webpack,
   springboot,
   mongodb,
+  mysql,
+  postgresql,
 };

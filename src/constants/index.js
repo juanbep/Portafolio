@@ -16,13 +16,14 @@ import {
   bootstrap,
   graphql,
   java,
-  jest,
   php,
   python,
   rxjs,
   webpack,
   mongodb,
   springboot,
+  mysql,
+  postgresql,
 } from "../assets/icons";
 
 export const skills = [
@@ -47,24 +48,24 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
-  },
-  {
     imageUrl: react,
     name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: angular,
+    name: "Angular",
     type: "Frontend",
   },
   {
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
+  },
+  {
+    imageUrl: rxjs,
+    name: "RxJS",
+    type: "Frontend",
   },
   {
     imageUrl: sass,
@@ -77,8 +78,8 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: rxjs,
-    name: "RxJS",
+    imageUrl: bootstrap,
+    name: "Bootstrap",
     type: "Frontend",
   },
   {
@@ -87,33 +88,8 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: angular,
-    name: "Angular",
-    type: "Frontend",
-  },
-  {
-    imageUrl: bootstrap,
-    name: "Bootstrap",
-    type: "Frontend",
-  },
-  {
-    imageUrl: graphql,
-    name: "GraphQL",
-    type: "Frontend",
-  },
-  {
     imageUrl: java,
     name: "Java",
-    type: "Frontend",
-  },
-  {
-    imageUrl: jest,
-    name: "Jest",
-    type: "Frontend",
-  },
-  {
-    imageUrl: php,
-    name: "PHP",
     type: "Frontend",
   },
   {
@@ -122,14 +98,44 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
+    imageUrl: php,
+    name: "PHP",
     type: "Frontend",
   },
   {
     imageUrl: springboot,
     name: "Spring Boot",
     type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: graphql,
+    name: "GraphQL",
+    type: "Frontend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Frontend",
+  },
+  {
+    imageUrl: mysql,
+    name: "MySQL",
+    type: "Frontend",
+  },
+  {
+    imageUrl: postgresql,
+    name: "PostgreSQL",
+    type: "Frontend",
+  },
+  {
+    imageUrl: git,
+    name: "Git",
+    type: "Version Control",
   },
 ];
 
