@@ -14,6 +14,7 @@ const Footer = () => {
             className="underline mb-2"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="joshuas.world website"
           >
             www.joshuas.world
           </a>
@@ -23,6 +24,7 @@ const Footer = () => {
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="javascript mastery youtube channel"
           >
             JavaScript Mastery
           </a>
@@ -39,6 +41,7 @@ const Footer = () => {
               href="https://github.com/juanbep"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Enlace a GitHub"
             >
               <FaGithub
                 className="h-6 w-6 object-contain"
@@ -50,6 +53,7 @@ const Footer = () => {
               href="https://x.com/sr_beca98"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Enlace a Twitter"
             >
               <FaTwitter
                 className="h-6 w-6 object-contain"
@@ -61,6 +65,7 @@ const Footer = () => {
               href="https://www.instagram.com/mr.beca98/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Enlace a Instagram"
             >
               <FaInstagram
                 className="h-6 w-6 object-contain"
@@ -81,6 +86,7 @@ const Footer = () => {
             className="underline mb-2"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="3D model Blackhole"
           >
             Blackhole
           </a>
@@ -89,6 +95,7 @@ const Footer = () => {
             className="underline mb-2"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="3D model space boi"
           >
             space boi
           </a>
@@ -97,6 +104,7 @@ const Footer = () => {
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="3D X-WING"
           >
             X-WING
           </a>

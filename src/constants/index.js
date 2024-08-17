@@ -24,19 +24,12 @@ import {
   springboot,
   mysql,
   postgresql,
+  docker,
+  jest,
+  junit,
 } from "../assets/icons";
 
 export const skills = [
-  {
-    imageUrl: css,
-    name: "CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: html,
-    name: "HTML",
-    type: "Frontend",
-  },
   {
     imageUrl: javascript,
     name: "JavaScript",
@@ -65,7 +58,7 @@ export const skills = [
   {
     imageUrl: rxjs,
     name: "RxJS",
-    type: "Frontend",
+    type: "Reactive Programming",
   },
   {
     imageUrl: sass,
@@ -85,27 +78,27 @@ export const skills = [
   {
     imageUrl: webpack,
     name: "Webpack",
-    type: "Frontend",
+    type: "Tooling",
   },
   {
     imageUrl: java,
     name: "Java",
-    type: "Frontend",
+    type: "Backend",
   },
   {
     imageUrl: python,
     name: "Python",
-    type: "Frontend",
+    type: "Backend",
   },
   {
     imageUrl: php,
     name: "PHP",
-    type: "Frontend",
+    type: "Backend",
   },
   {
     imageUrl: springboot,
     name: "Spring Boot",
-    type: "Frontend",
+    type: "Backend",
   },
   {
     imageUrl: nodejs,
@@ -113,29 +106,39 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: graphql,
-    name: "GraphQL",
-    type: "Frontend",
-  },
-  {
     imageUrl: mongodb,
     name: "MongoDB",
-    type: "Frontend",
+    type: "Database",
   },
   {
     imageUrl: mysql,
     name: "MySQL",
-    type: "Frontend",
+    type: "Database",
   },
   {
     imageUrl: postgresql,
     name: "PostgreSQL",
-    type: "Frontend",
+    type: "Database",
   },
   {
     imageUrl: git,
     name: "Git",
     type: "Version Control",
+  },
+  {
+    imageUrl: docker,
+    name: "Docker",
+    type: "DevOps",
+  },
+  {
+    imageUrl: jest,
+    name: "Jest",
+    type: "Testing",
+  },
+  {
+    imageUrl: junit,
+    name: "JUnit",
+    type: "Testing",
   },
 ];
 

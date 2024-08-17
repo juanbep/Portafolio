@@ -29,7 +29,9 @@ const About = () => {
           </p>
         </div>
         <div className="mt-10 flex flex-col gap-3">
-          <h3 className="subhead-text text-white">Mis Habilidades</h3>
+          <h3 className="subhead-text text-white">
+            Mis<span className="blue-gradient_text"> Habilidades</span>
+          </h3>
         </div>
         <div className="mt-10 flex flex-col items-center">
           <div className="icon-grid">
@@ -49,7 +51,7 @@ const About = () => {
         </div>
 
         <div className="py-16">
-          <h3 className="subhead-text text-white">Experiencia</h3>
+          <h3 className="subhead-text blue-gradient_text">Experiencia</h3>
           <div className="mt-5 flex flex-col gap-3 text-white">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique

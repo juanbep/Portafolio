@@ -1,6 +1,6 @@
 import { useState, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Loader, HomeInfo } from "../components";
+import { Loader, HomeInfo, DragHand } from "../components";
 import SpaceBoy from "../models/SpaceBoy";
 import Space from "../models/Space";
 import Spaceship from "../models/Spaceship";
@@ -89,6 +89,7 @@ const Home = () => {
             scale={blackHoleScale}
             rotation={blackHoleRotation}
           />
+          {/* <DragHand/> */}
           <SpaceBoy
             isRotating={isRotating}
             setIsRotating={setIsRotating}

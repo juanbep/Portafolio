@@ -22,6 +22,9 @@ import springboot from "./springboot.svg";
 import mongodb from "./mongodb.svg";
 import mysql from "./mysql.svg";
 import postgresql from "./postgresql.svg";
+import docker from "./docker.svg";
+import jest from "./jest.svg";
+import junit from "./junit.svg";
 
 export {
   css,
@@ -48,4 +51,7 @@ export {
   mongodb,
   mysql,
   postgresql,
+  docker,
+  jest,
+  junit,
 };

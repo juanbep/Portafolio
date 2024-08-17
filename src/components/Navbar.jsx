@@ -6,6 +6,7 @@ import { GoRocket } from "react-icons/go";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillHome, AiOutlineMenu, AiOutlineMessage } from "react-icons/ai";
+import CV from "../assets/documents/JuanDavidBeca-CV.pdf";
 
 const Navbar = memo(() => {
   const [open, setOpen] = useState(false);
@@ -143,8 +144,10 @@ const Navbar = memo(() => {
             </ul>
             <div className="py-2">
               <a
-                href="/"
+                href={CV}
+                download="JuanDavidBeca-CV.pdf"
                 className="flex items-center px-4 py-2 text-base text-black hover:bg-gray-100"
+                aria-label="Descargar mi hoja de vida en formato PDF"
               >
                 <FaDownload
                   className="mr-2 object-contain"
