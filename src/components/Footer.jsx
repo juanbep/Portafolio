@@ -8,20 +8,20 @@ const Footer = () => {
           className="flex-1 flex flex-col items-center sm:items-start mb-6 sm:mb-0"
           role="contentinfo"
         >
-          <h4 className="font-semibold">Inspired by:</h4>
+          <h4 className="font-semibold text-neutral-50">Inspired by:</h4>
           <a
             href="https://www.joshuas.world/"
-            className="underline mb-2"
+            className="underline mb-2 text-neutral-100"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="joshuas.world website"
           >
             www.joshuas.world
           </a>
-          <h4 className="font-semibold">Thanks to:</h4>
+          <h4 className="font-semibold text-neutral-50">Thanks to:</h4>
           <a
             href="https://www.youtube.com/c/javascriptmastery"
-            className="underline"
+            className="underline text-neutral-100"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="javascript mastery youtube channel"
@@ -34,8 +34,8 @@ const Footer = () => {
           className="flex-1 flex flex-col items-center mb-6 sm:mb-0"
           role="contentinfo"
         >
-          <h4 className="font-semibold">Designed by:</h4>
-          <p>Juan David Beca</p>
+          <h4 className="font-semibold text-neutral-50">Designed by:</h4>
+          <p className="text-neutral-100">Juan David Beca</p>
           <div className="flex justify-center items-center space-x-3 mt-2">
             <a
               href="https://github.com/juanbep"
@@ -44,7 +44,7 @@ const Footer = () => {
               aria-label="Enlace a GitHub"
             >
               <FaGithub
-                className="h-6 w-6 object-contain"
+                className="h-6 w-6 object-contain text-neutral-100"
                 aria-hidden="true"
                 aria-label="GitHub"
               />
@@ -56,7 +56,7 @@ const Footer = () => {
               aria-label="Enlace a Twitter"
             >
               <FaTwitter
-                className="h-6 w-6 object-contain"
+                className="h-6 w-6 object-contain text-neutral-100"
                 aria-hidden="true"
                 aria-label="Twitter"
               />
@@ -68,7 +68,7 @@ const Footer = () => {
               aria-label="Enlace a Instagram"
             >
               <FaInstagram
-                className="h-6 w-6 object-contain"
+                className="h-6 w-6 object-contain text-neutral-100"
                 aria-hidden="true"
                 aria-label="Instagram"
               />
@@ -80,10 +80,10 @@ const Footer = () => {
           className="flex-1 flex flex-col items-center sm:items-end"
           role="contentinfo"
         >
-          <h4 className="font-semibold">3D model's credits:</h4>
+          <h4 className="font-semibold text-neutral-50">3D model's credits:</h4>
           <a
             href="https://sketchfab.com/3d-models/blackhole-32f978d0e7354af293fa498f2998b14c"
-            className="underline mb-2"
+            className="underline mb-2 text-neutral-100"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model Blackhole"
@@ -92,7 +92,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee60"
-            className="underline mb-2"
+            className="underline mb-2 text-neutral-100"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model space boi"
@@ -101,7 +101,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/x-wing-04b0147bd4234e61ba21bbf7a73ceecc"
-            className="underline"
+            className="underline text-neutral-100"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D X-WING"

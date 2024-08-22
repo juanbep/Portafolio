@@ -10,8 +10,8 @@ import { Footer } from "../components";
 const About = () => {
   return (
     <div className="bg-black-500 w-full h-full">
-      <section className="max-container">
-        <ParticlesComponent />
+      <ParticlesComponent />
+      <section className="max-container relative">
         <h1 className="head-text text-white">
           Hola, Soy{" "}
           <span className="blue-gradient_text font-semibold drop-shadow">
@@ -20,7 +20,7 @@ const About = () => {
           </span>{" "}
         </h1>
 
-        <div className="mt-5 flex flex-col gap-3 text-white">
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             quibusdam ab repellendus, error fugiat quia sint libero! Cumque
@@ -52,7 +52,7 @@ const About = () => {
 
         <div className="py-16">
           <h3 className="subhead-text blue-gradient_text">Experiencia</h3>
-          <div className="mt-5 flex flex-col gap-3 text-white">
+          <div className="mt-5 flex flex-col gap-3 text-slate-500">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               tempore accusamus officia beatae incidunt recusandae dolor optio

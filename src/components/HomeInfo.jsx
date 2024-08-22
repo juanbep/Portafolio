@@ -27,7 +27,7 @@ const HomeInfo = ({ currentStage }) => {
         <span className="font-semibold mx-2">Beca</span>
         👋
         <br />
-        Estudiante de ingeniería de sistemas de la
+        Estudiante de Ingeniería de Sistemas de la
         <span className="font-semibold mx-2 inline-flex items-center">
           Universidad del Cauca
         </span>

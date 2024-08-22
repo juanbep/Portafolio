@@ -25,6 +25,10 @@ import postgresql from "./postgresql.svg";
 import docker from "./docker.svg";
 import jest from "./jest.svg";
 import junit from "./junit.svg";
+import jenkins from "./jenkins.svg";
+import oracle from "./oracle.svg";
+import laravel from "./laravel.svg";
+import symfony from "./symfony.svg";
 
 export {
   css,
@@ -54,4 +58,8 @@ export {
   docker,
   jest,
   junit,
+  jenkins,
+  oracle,
+  laravel,
+  symfony,
 };

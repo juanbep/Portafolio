@@ -1,9 +1,5 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-  css,
   git,
-  github,
-  html,
   javascript,
   nodejs,
   react,
@@ -13,8 +9,6 @@ import {
   typescript,
   unicauca,
   angular,
-  bootstrap,
-  graphql,
   java,
   php,
   python,
@@ -27,19 +21,13 @@ import {
   docker,
   jest,
   junit,
+  jenkins,
+  oracle,
+  laravel,
+  symfony,
 } from "../assets/icons";
 
 export const skills = [
-  {
-    imageUrl: javascript,
-    name: "JavaScript",
-    type: "Frontend",
-  },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
   {
     imageUrl: react,
     name: "React",
@@ -61,28 +49,13 @@ export const skills = [
     type: "Reactive Programming",
   },
   {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
-  },
-  {
-    imageUrl: tailwindcss,
-    name: "Tailwind CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: bootstrap,
-    name: "Bootstrap",
-    type: "Frontend",
-  },
-  {
-    imageUrl: webpack,
-    name: "Webpack",
-    type: "Tooling",
-  },
-  {
     imageUrl: java,
     name: "Java",
+    type: "Backend",
+  },
+  {
+    imageUrl: springboot,
+    name: "Spring Boot",
     type: "Backend",
   },
   {
@@ -96,8 +69,13 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: springboot,
-    name: "Spring Boot",
+    imageUrl: symfony,
+    name: "Symfony",
+    type: "Backend",
+  },
+  {
+    imageUrl: laravel,
+    name: "Laravel",
     type: "Backend",
   },
   {
@@ -106,8 +84,28 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
+    imageUrl: docker,
+    name: "Docker",
+    type: "DevOps",
+  },
+  {
+    imageUrl: webpack,
+    name: "Webpack",
+    type: "Tooling",
+  },
+  {
+    imageUrl: jest,
+    name: "Jest",
+    type: "Testing",
+  },
+  {
+    imageUrl: junit,
+    name: "JUnit",
+    type: "Testing",
+  },
+  {
+    imageUrl: jenkins,
+    name: "Jenkins",
     type: "Database",
   },
   {
@@ -121,24 +119,9 @@ export const skills = [
     type: "Database",
   },
   {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: docker,
-    name: "Docker",
-    type: "DevOps",
-  },
-  {
-    imageUrl: jest,
-    name: "Jest",
-    type: "Testing",
-  },
-  {
-    imageUrl: junit,
-    name: "JUnit",
-    type: "Testing",
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
   },
 ];
 
@@ -151,7 +134,7 @@ export const experiences = [
     date: "feb. 2024 - jun. 2024",
     points: [
       `
-      En mi rol como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias Humanas y Sociales de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
+      Ejercí como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias Humanas y Sociales de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
       Esta experiencia no solo me permitió desarrollar habilidades técnicas, sino también fortalecer mis competencias interpersonales y comunicativas.`,
     ],
   },
@@ -163,7 +146,7 @@ export const experiences = [
     date: "oct. 2023 - dic. 2023",
     points: [
       `
-      En mi rol como monitor administrativo en la Universidad del Cauca, participé en el proceso de renovación de la Acreditación y Certificación Institucional del programa de Licenciatura en Etnoeducación.
+      Como monitor administrativo en la Universidad del Cauca, participé en el proceso de renovación de la Acreditación y Certificación Institucional del programa de Licenciatura en Etnoeducación.
       Entre mis principales responsabilidades se encontraba la creación y gestión de bases de datos de egresados, el diseño y aplicación de encuestas, así como la elaboración de reportes estadísticos mediante representaciones gráficas. 
       Esta experiencia fue clave para fortalecer mis habilidades técnicas, analíticas y de gestión de la información.`,
     ],
@@ -176,16 +159,19 @@ export const experiences = [
     date: "mar. 2023 - jun. 2023",
     points: [
       ` 
-      En mi rol como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias de la Salud de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
+      Como Monitor Administrativo de la Sala de Sistemas de la Facultad de Ciencias de la Salud de la Universidad del Cauca, fui responsable de la actualización y el mantenimiento de los equipos informáticos, la gestión del inventario, y la provisión de soporte técnico a profesores y estudiantes en el área de informática.
       Esta experiencia no solo me permitió desarrollar habilidades técnicas, sino también fortalecer mis competencias interpersonales y comunicativas.`,
     ],
   },
 ];
 
-export const socialLinks = [
+export const projects = [
   {
-    name: "GitHub",
-    iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    iconUrl: unicauca,
+    theme: "btn-back-red",
+    name: "Sitio web de comercio electrónico.",
+    description:
+      "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
+    link: "https://github.com/adrianhajdin/pricewise",
   },
 ];

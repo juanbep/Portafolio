@@ -1,6 +1,3 @@
-import meta from "./meta.png";
-import shopify from "./shopify.png";
-import starbucks from "./starbucks.png";
-import tesla from "./tesla.png";
+import card from "./card-top.jpg";
 
-export { meta, shopify, starbucks, tesla };
+export { card };

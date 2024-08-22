@@ -89,7 +89,7 @@ const Home = () => {
             scale={blackHoleScale}
             rotation={blackHoleRotation}
           />
-          {/* <DragHand/> */}
+          <DragHand isRotating={isRotating} />
           <SpaceBoy
             isRotating={isRotating}
             setIsRotating={setIsRotating}
