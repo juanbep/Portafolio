@@ -170,6 +170,16 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Sitio web de comercio electrónico.",
+    skills: "PHP, Symfony, JavaScript, JWT, bcrypt, APIs, Git, Nginx, Docker",
+    description:
+      "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
+    link: "https://github.com/adrianhajdin/pricewise",
+  },
+  {
+    iconUrl: unicauca,
+    theme: "btn-back-red",
+    name: "Sitio web de comercio electrónico.",
+    skills: "PHP, Symfony, JavaScript, JWT, bcrypt, APIs, Git, Nginx, Docker",
     description:
       "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
     link: "https://github.com/adrianhajdin/pricewise",

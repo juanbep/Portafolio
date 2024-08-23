@@ -1,4 +1,4 @@
-import { FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <h4 className="font-semibold text-neutral-50">Inspired by:</h4>
           <a
             href="https://www.joshuas.world/"
-            className="underline mb-2 text-neutral-100"
+            className="underline mb-2 text-neutral-100 hover:text-slate-950"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="joshuas.world website"
@@ -21,7 +21,7 @@ const Footer = () => {
           <h4 className="font-semibold text-neutral-50">Thanks to:</h4>
           <a
             href="https://www.youtube.com/c/javascriptmastery"
-            className="underline text-neutral-100"
+            className="underline text-neutral-100 hover:text-slate-950"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="javascript mastery youtube channel"
@@ -36,7 +36,7 @@ const Footer = () => {
         >
           <h4 className="font-semibold text-neutral-50">Designed by:</h4>
           <p className="text-neutral-100">Juan David Beca</p>
-          <div className="flex justify-center items-center space-x-3 mt-2">
+          <div className="flex justify-center items-center space-x-3 mt-2 hover:text-blue-700">
             <a
               href="https://github.com/juanbep"
               target="_blank"
@@ -44,33 +44,9 @@ const Footer = () => {
               aria-label="Enlace a GitHub"
             >
               <FaGithub
-                className="h-6 w-6 object-contain text-neutral-100"
-                aria-hidden="true"
+                className="h-6 w-6 object-contain text-neutral-100 hover:text-slate-950"
+                aria-hidden="false"
                 aria-label="GitHub"
-              />
-            </a>
-            <a
-              href="https://x.com/sr_beca98"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Enlace a Twitter"
-            >
-              <FaTwitter
-                className="h-6 w-6 object-contain text-neutral-100"
-                aria-hidden="true"
-                aria-label="Twitter"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/mr.beca98/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Enlace a Instagram"
-            >
-              <FaInstagram
-                className="h-6 w-6 object-contain text-neutral-100"
-                aria-hidden="true"
-                aria-label="Instagram"
               />
             </a>
           </div>
@@ -83,7 +59,7 @@ const Footer = () => {
           <h4 className="font-semibold text-neutral-50">3D model's credits:</h4>
           <a
             href="https://sketchfab.com/3d-models/blackhole-32f978d0e7354af293fa498f2998b14c"
-            className="underline mb-2 text-neutral-100"
+            className="underline mb-2 text-neutral-100 hover:text-slate-950"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model Blackhole"
@@ -92,7 +68,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee60"
-            className="underline mb-2 text-neutral-100"
+            className="underline mb-2 text-neutral-100 hover:text-slate-950"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model space boi"
@@ -101,7 +77,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/x-wing-04b0147bd4234e61ba21bbf7a73ceecc"
-            className="underline text-neutral-100"
+            className="underline text-neutral-100 hover:text-slate-950"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D X-WING"

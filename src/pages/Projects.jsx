@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { projects } from "../constants";
 import { Footer } from "../components";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import ParticlesComponent from "../hooks/particles";
 import { card } from "../assets/images";
 
@@ -27,27 +27,23 @@ const Projects = () => {
 
         <div className="flex flex-wrap my-20 gap-16">
           {projects.map((project) => (
-            <div className="max-w-sm rounded overflow-hidden bg-white">
-              <img
-                className="w-full"
-                src={card}
-                alt="Sunset in the mountains"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{project.name}</div>
-                <p className="text-gray-700 text-base">{project.description}</p>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #PHP
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #Symfony
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  #JavaScript
-                </span>
-              </div>
+            <div className="relative flex flex-col bg-neutral-100 border shadow-sm rounded-xl p-4 md:p-5">
+              <h3 className="text-lg font-bold text-gray-800">
+                {project.name}
+              </h3>
+              <p className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">
+                {project.skills}
+              </p>
+              <p className="mt-2 text-gray-500 dark:text-neutral-400">
+                {project.description}
+              </p>
+              <Link to="/projects" className="neo-brutalism-white neo-btn">
+                Ver repositorio
+                <FaGithub
+                  alt="arrow"
+                  className="w-4 h-4 object-contain"
+                />
+              </Link>
             </div>
           ))}
         </div>

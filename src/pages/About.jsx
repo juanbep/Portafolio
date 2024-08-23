@@ -37,7 +37,7 @@ const About = () => {
           <div className="icon-grid">
             {skills.map((skill) => (
               <div className="tooltip icon-item" key={skill.name}>
-                <div title={`${skill.name}`}>
+                <div title={`${skill.name}`} className="flex justify-center">
                   <img
                     src={skill.imageUrl}
                     alt={skill.name}
@@ -61,7 +61,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="mt-12 flex">
+          <div className="mt-12 flex overflow-hidden">
             <VerticalTimeline animate={true}>
               {experiences.map((experience, index) => (
                 <VerticalTimelineElement

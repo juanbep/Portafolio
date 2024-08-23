@@ -49,6 +49,10 @@ body:has(.card[data-color="green"]:hover) {
     .info-box {
         @apply mx-5 relative flex text-black flex-col gap-3 max-w-3xl neo-brutalism-purple py-4 px-8;
     }
+
+    .neo-btn {
+        @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/4 w-[60%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+    }
 }
 
 /******************************About_page:grid_icons******************************/
@@ -134,3 +138,10 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 /******************************end******************************/
+
+.neo-brutalism-white {
+    background: #fff;
+    border: #fff;
+    box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
+        0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
