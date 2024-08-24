@@ -5,21 +5,12 @@ import { Home, About, Projects } from "./pages";
 const App = () => {
   return (
     <main>
-      <Router>
+      <Router basename="/Portafolio">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="/*"
-            element={
-              <>
-                <Routes>
-                  <Route path="/about" element={<About />} />
-                  <Route path="/projects" element={<Projects />} />
-                </Routes>
-              </>
-            }
-          />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </Router>
     </main>
