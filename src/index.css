@@ -51,11 +51,10 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .neo-btn {
-        @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/4 w-[60%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+        @apply overflow-hidden py-3 px-6 rounded-lg text-white text-center font-semibold sm:w-1/4 w-[60%] -bottom-7 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3 transition-all duration-300 ease-in-out;
     }
 }
 
-/******************************About_page:grid_icons******************************/
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -71,9 +70,6 @@ body:has(.card[data-color="green"]:hover) {
     padding: 20px;
 }
 
-/******************************end******************************/
-
-/******************************About_page:tooltip******************************/
 .tooltip {
     position: relative;
     display: inline-block;
@@ -109,9 +105,6 @@ body:has(.card[data-color="green"]:hover) {
     visibility: visible;
 }
 
-/******************************end******************************/
-
-/******************************HomeInfo_component:card_effect******************************/
 .neo-brutalism-purple {
     background: #ffffff;
     position: relative;
@@ -124,9 +117,6 @@ body:has(.card[data-color="green"]:hover) {
         rgba(128, 0, 128, 0.05) 25px 25px;
 }
 
-/******************************end******************************/
-
-/******************************react-vertical-timeline******************************/
 @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns .vertical-timeline-element .vertical-timeline-element-content .vertical-timeline-element-date {
         color: rgb(255, 255, 255) !important;
@@ -137,11 +127,39 @@ body:has(.card[data-color="green"]:hover) {
     }
 }
 
-/******************************end******************************/
+.btn-hover:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
 
-.neo-brutalism-white {
-    background: #fff;
-    border: #fff;
-    box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
-        0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+.btn-hover:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.btn-hover::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
 }

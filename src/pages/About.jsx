@@ -82,6 +82,7 @@ const About = () => {
                     borderStyle: "solid",
                     borderBottomColor: "transparent",
                     boxShadow: "none",
+                    backgroundColor: "#FFFFFF",
                   }}
                 >
                   <div>

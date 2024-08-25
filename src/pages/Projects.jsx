@@ -26,23 +26,23 @@ const Projects = () => {
         </p>
 
         <div className="flex flex-wrap my-20 gap-16">
-          {projects.map((project) => (
-            <div className="relative flex flex-col bg-neutral-100 border shadow-sm rounded-xl p-4 md:p-5">
-              <h3 className="text-lg font-bold text-gray-800">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col bg-white border shadow-sm p-4 md:p-5 rounded"
+            >
+              <h2 className="text-lg font-bold text-gray-800">
                 {project.name}
-              </h3>
-              <p className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">
+              </h2>
+              <h3 className="mt-1 text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">
                 {project.skills}
-              </p>
-              <p className="mt-2 text-gray-500 dark:text-neutral-400">
+              </h3>
+              <p className="mt-2 pb-2 text-gray-500 dark:text-neutral-400">
                 {project.description}
               </p>
-              <Link to="/projects" className="neo-brutalism-white neo-btn">
-                Ver repositorio
-                <FaGithub
-                  alt="arrow"
-                  className="w-4 h-4 object-contain"
-                />
+              <Link to="/projects" className="bg-slate-950 neo-btn btn-hover">
+                GitHub
+                <FaGithub alt="arrow" className="w-4 h-4 object-contain" />
               </Link>
             </div>
           ))}
