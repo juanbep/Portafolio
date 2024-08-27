@@ -50,9 +50,6 @@ body:has(.card[data-color="green"]:hover) {
         @apply mx-5 relative flex text-black flex-col gap-3 max-w-3xl neo-brutalism-purple py-4 px-8;
     }
 
-    .neo-btn {
-        @apply overflow-hidden py-3 px-6 rounded-lg text-white text-center font-semibold sm:w-1/4 w-[60%] -bottom-7 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3 transition-all duration-300 ease-in-out;
-    }
 }
 
 .icon-grid {
@@ -127,16 +124,51 @@ body:has(.card[data-color="green"]:hover) {
     }
 }
 
-.btn-hover:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
+.button {
+    position: absolute;
+    bottom: -1.7rem;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    min-width: 150px;
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #020617ee;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: 600;
+    border: 3px solid #020617;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
 }
 
-.btn-hover:hover::before {
+.icon {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
     animation: shine 1.5s ease-out infinite;
 }
 
-.btn-hover::before {
+.button::before {
     content: "";
     position: absolute;
     width: 100px;

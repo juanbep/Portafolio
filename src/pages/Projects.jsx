@@ -40,9 +40,9 @@ const Projects = () => {
               <p className="mt-2 pb-2 text-gray-500 dark:text-neutral-400">
                 {project.description}
               </p>
-              <Link to="/projects" className="bg-slate-950 neo-btn btn-hover">
+              <Link to="/projects" className="button sm:w-1/4 max-sm:w-1/3">
                 GitHub
-                <FaGithub alt="arrow" className="w-4 h-4 object-contain" />
+                <FaGithub alt="arrow" className="icon object-contain" />
               </Link>
             </div>
           ))}
