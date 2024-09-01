@@ -44,7 +44,18 @@ const About = () => {
                     className="w-auto h-auto object-contain"
                   />
                 </div>
-                <span className="tooltiptext">{skill.name}</span>
+                <span className="tooltiptext">
+                  {skill.name}
+                  <br />
+                  <div className="range">
+                    <div
+                      className="fill"
+                      style={{ width: `${skill.percentage}` }}
+                    >
+                      <span className="percentage-text">{`${skill.percentage}`}</span>
+                    </div>
+                  </div>
+                </span>
               </div>
             ))}
           </div>
@@ -67,6 +78,7 @@ const About = () => {
                 <VerticalTimelineElement
                   key={index}
                   date={experience.date}
+                  className=".vertical-timeline-element-content"
                   dateClassName=".vertical-timeline-element-date"
                   icon={
                     <div className="flex justify-center items-center w-full h-full">

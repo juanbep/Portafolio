@@ -67,6 +67,11 @@ body:has(.card[data-color="green"]:hover) {
     padding: 20px;
 }
 
+.icon-item:hover {
+    transform: translateY(0.75rem);
+    transition: all 0.3s ease;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -74,7 +79,8 @@ body:has(.card[data-color="green"]:hover) {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    font-size: small;
+    width: 100px;
     background-color: rgba(0, 0, 0, 0.630);
     color: #fff;
     text-align: center;
@@ -84,7 +90,7 @@ body:has(.card[data-color="green"]:hover) {
     z-index: 1;
     bottom: 85%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -50px;
 }
 
 .tooltip .tooltiptext::after {
@@ -102,6 +108,34 @@ body:has(.card[data-color="green"]:hover) {
     visibility: visible;
 }
 
+.tooltip .range {
+    position: relative;
+    background-color: #E5E7EB;
+    width: 80%; 
+    margin: 0 auto; 
+    height: 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.tooltip .range .fill {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(128, 0, 128);
+    height: 100%;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip .range .fill .percentage-text {
+    color: #fff;
+    font-size: 0.6rem;
+    position: absolute;
+    right: 2px; 
+}
+
 .neo-brutalism-purple {
     background: #ffffff;
     position: relative;
@@ -115,13 +149,17 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 @media only screen and (min-width: 1170px) {
-    .vertical-timeline--two-columns .vertical-timeline-element .vertical-timeline-element-content .vertical-timeline-element-date {
+    .vertical-timeline-element-date {
         color: rgb(255, 255, 255) !important;
         font-size: 14px;
         font-weight: 400;
         font-family: "Work Sans", sans-serif !important;
         opacity: 1 !important;
     }
+}
+
+.vertical-timeline-element-content {
+    border-radius: 0.5em;
 }
 
 .container-button {
