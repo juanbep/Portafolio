@@ -20,7 +20,7 @@ const About = () => {
           </span>{" "}
         </h1>
 
-        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <div className="mt-5 flex flex-col gap-3 text-slate-500 font-mono">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             quibusdam ab repellendus, error fugiat quia sint libero! Cumque
@@ -63,7 +63,7 @@ const About = () => {
 
         <div className="py-16">
           <h3 className="subhead-text blue-gradient_text">Experiencia</h3>
-          <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <div className="mt-5 flex flex-col gap-3 text-slate-500 font-mono">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               tempore accusamus officia beatae incidunt recusandae dolor optio
@@ -94,31 +94,29 @@ const About = () => {
                     borderStyle: "solid",
                     borderBottomColor: "transparent",
                     boxShadow: "none",
-                    backgroundColor: "#FFFFFF",
                   }}
                 >
-                  <div>
-                    <h3 className="text-black text-xl font-poppins font-semibold">
-                      {experience.title}
-                    </h3>
-                    <p
-                      className="text-black-500 font-medium text-base"
-                      style={{ margin: 0 }}
-                    >
-                      {experience.company_name}
-                    </p>
-                  </div>
-
-                  <ul className="my-5 list-disc ml-5 space-y-2">
+                  <div className="margin">
+                    <div>
+                      <h3 className="text-black ml-1 text-xl font-poppins font-semibold">
+                        {experience.title}
+                      </h3>
+                      <h4
+                        className="vertical-timeline-element-subtitle"
+                        style={{ margin: 0 }}
+                      >
+                        {experience.company_name}
+                      </h4>
+                    </div>
                     {experience.points.map((point, index) => (
-                      <li
+                      <p
+                        className="vertical-timeline-element-subtitle-paragraph font-mono"
                         key={`experience-point-${index}`}
-                        className="text-black font-normal pl-1 text-sm"
                       >
                         {point}
-                      </li>
+                      </p>
                     ))}
-                  </ul>
+                  </div>
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>

@@ -32,7 +32,7 @@ export const skills = [
     imageUrl: react,
     name: "React",
     type: "Frontend",
-    percentage: "20%"
+    percentage: "50%"
   },
   {
     imageUrl: angular,
