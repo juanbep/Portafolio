@@ -90,33 +90,32 @@ const About = () => {
                     </div>
                   }
                   contentStyle={{
-                    borderBottom: "8px",
+                    borderBottom: "0px",
                     borderStyle: "solid",
                     borderBottomColor: "transparent",
                     boxShadow: "none",
                   }}
                 >
-                  <div className="margin">
-                    <div>
-                      <h3 className="text-black ml-1 text-xl font-poppins font-semibold">
-                        {experience.title}
-                      </h3>
-                      <h4
-                        className="vertical-timeline-element-subtitle"
-                        style={{ margin: 0 }}
-                      >
-                        {experience.company_name}
-                      </h4>
-                    </div>
-                    {experience.points.map((point, index) => (
-                      <p
-                        className="vertical-timeline-element-subtitle-paragraph font-mono"
-                        key={`experience-point-${index}`}
-                      >
-                        {point}
-                      </p>
-                    ))}
+                  <div class="vertical-line"></div>
+                  <div>
+                    <h3 className="text-black ml-1 text-xl font-poppins font-semibold">
+                      {experience.title}
+                    </h3>
+                    <h4
+                      className="vertical-timeline-element-subtitle"
+                      style={{ margin: 0 }}
+                    >
+                      {experience.company_name}
+                    </h4>
                   </div>
+                  {experience.points.map((point, index) => (
+                    <p
+                      className="vertical-timeline-element-subtitle-paragraph font-mono"
+                      key={`experience-point-${index}`}
+                    >
+                      {point}
+                    </p>
+                  ))}
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
