@@ -1,3 +1,3 @@
-import card from "./card-top.jpg";
+import sunset from "./sunset.svg";
 
-export { card };
+export { sunset };

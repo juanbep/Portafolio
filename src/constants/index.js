@@ -32,115 +32,115 @@ export const skills = [
     imageUrl: react,
     name: "React",
     type: "Frontend",
-    percentage: "50%"
+    percentage: "50%",
   },
   {
     imageUrl: angular,
     name: "Angular",
     type: "Frontend",
-    percentage: "40%"
+    percentage: "40%",
   },
   {
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
-    percentage: "60%"
+    percentage: "60%",
   },
   {
     imageUrl: rxjs,
     name: "RxJS",
     type: "Reactive Programming",
-    percentage: "50%"
+    percentage: "50%",
   },
   {
     imageUrl: java,
     name: "Java",
     type: "Backend",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: springboot,
     name: "Spring Boot",
     type: "Backend",
-    percentage: "70%"
+    percentage: "70%",
   },
   {
     imageUrl: python,
     name: "Python",
     type: "Backend",
-    percentage: "50%"
+    percentage: "50%",
   },
   {
     imageUrl: php,
     name: "PHP",
     type: "Backend",
-    percentage: "50%"
+    percentage: "50%",
   },
   {
     imageUrl: symfony,
     name: "Symfony",
     type: "Backend",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: laravel,
     name: "Laravel",
     type: "Backend",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: nodejs,
     name: "Node.js",
     type: "Backend",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: docker,
     name: "Docker",
     type: "DevOps",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: webpack,
     name: "Webpack",
     type: "Tooling",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: jest,
     name: "Jest",
     type: "Testing",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: junit,
     name: "JUnit",
     type: "Testing",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: jenkins,
     name: "Jenkins",
     type: "Database",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: mysql,
     name: "MySQL",
     type: "Database",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: postgresql,
     name: "PostgreSQL",
     type: "Database",
-    percentage: "80%"
+    percentage: "80%",
   },
   {
     imageUrl: mongodb,
     name: "MongoDB",
     type: "Database",
-    percentage: "80%"
+    percentage: "80%",
   },
 ];
 
@@ -189,8 +189,25 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Sitio web de comercio electrónico.",
-    skills:
-      "PHP, Symfony, JavaScript, JWT, bcrypt, APIs, Git, Nginx, Docker",
+    skills: "#PHP, #Symfony, #JavaScript, #JWT, #bcrypt, #APIs, #Git, #Nginx, #Docker",
+    description:
+      "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
+    link: "https://github.com/adrianhajdin/pricewise",
+  },
+  {
+    iconUrl: unicauca,
+    theme: "btn-back-red",
+    name: "Sitio web de comercio electrónico.",
+    skills: "PHP, Symfony, JavaScript, JWT, bcrypt, APIs, Git, Nginx, Docker",
+    description:
+      "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
+    link: "https://github.com/adrianhajdin/pricewise",
+  },
+  {
+    iconUrl: unicauca,
+    theme: "btn-back-red",
+    name: "Sitio web de comercio electrónico.",
+    skills: "PHP, Symfony, JavaScript, JWT, bcrypt, APIs, Git, Nginx, Docker",
     description:
       "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
     link: "https://github.com/adrianhajdin/pricewise",

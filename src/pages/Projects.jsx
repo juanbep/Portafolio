@@ -1,6 +1,6 @@
-import { projects } from "../constants";
 import { Footer } from "../components";
 import ParticlesComponent from "../hooks/particles";
+import Swiper from "../hooks/swiper";
 
 const Projects = () => {
   return (
@@ -21,10 +21,7 @@ const Projects = () => {
           explore the codebase and contribute your ideas for further
           enhancements. Your collaboration is highly valued!
         </p>
-
-        <div className="grid grid-cols-1 gap-6 my-20">
-        
-        </div>
+        <Swiper />
         <hr className="border-slate-300" />
         <br />
         <Footer />
