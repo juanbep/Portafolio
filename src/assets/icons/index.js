@@ -29,6 +29,7 @@ import jenkins from "./jenkins.svg";
 import oracle from "./oracle.svg";
 import laravel from "./laravel.svg";
 import symfony from "./symfony.svg";
+import dev from "./dev.svg";
 
 export {
   css,
@@ -62,4 +63,5 @@ export {
   oracle,
   laravel,
   symfony,
+  dev,
 };

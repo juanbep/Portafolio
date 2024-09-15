@@ -22,10 +22,18 @@ const About = () => {
 
         <div className="mt-5 flex flex-col gap-3 text-slate-500 font-mono">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            quibusdam ab repellendus, error fugiat quia sint libero! Cumque
-            eveniet, iure sequi quae tempora temporibus corporis assumenda ut,
-            beatae atque fugiat.
+            Soy un desarrollador Full-Stack con experiencia en lenguajes como
+            JavaScript, PHP y Java. Mi área de enfoque es el desarrollo web o
+            Front-End, donde me especializo en crear interfaces atractivas,
+            funcionales y óptimas. En el backend, aplico buenas prácticas de
+            programación como los principios SOLID, patrones de diseño y
+            arquitecturas según el contexto, como hexagonal, microservicios,
+            MVC, entre otros. Estoy comprometido con el aprendizaje continuo y
+            siempre me mantengo al día con las últimas tecnologías y tendencias.
+            Mis habilidades para trabajar en equipo, junto con una buena
+            capacidad de comunicación y dedicación, me convierten en un valioso
+            miembro para cualquier proyecto de desarrollo de software que se
+            adpate a mis habilidades.
           </p>
         </div>
         <div className="mt-10 flex flex-col gap-3">
@@ -65,10 +73,13 @@ const About = () => {
           <h3 className="subhead-text blue-gradient_text">Experiencia</h3>
           <div className="mt-5 flex flex-col gap-3 text-slate-500 font-mono">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              tempore accusamus officia beatae incidunt recusandae dolor optio
-              assumenda, ea asperiores reiciendis neque tenetur, ad quam
-              explicabo eligendi voluptate et. Explicabo?
+              He acumulado experiencia valiosa como desarrollador freelance,
+              trabajando en una variedad de proyectos que abarcan tanto el
+              desarrollo Front-End como el Back-End. Además, he desempeñado en
+              varias ocasiones el rol de monitor en la Universidad del Cauca, lo
+              que me permitió desarrollar habilidades técnicas y de comunicación
+              en un entorno académico, además de poner en práctica algunos de
+              los conocimientos adquiridos durante mi formación académica.
             </p>
           </div>
 
@@ -96,7 +107,7 @@ const About = () => {
                     boxShadow: "none",
                   }}
                 >
-                  <div class="vertical-line"></div>
+                  <div className="vertical-line"></div>
                   <div>
                     <h3 className="text-black ml-1 text-xl font-poppins font-semibold">
                       {experience.title}

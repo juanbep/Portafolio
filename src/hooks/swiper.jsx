@@ -64,7 +64,7 @@ export default function App() {
               <div className="footer-card bg-slate-900 text-slate-100">
                 <p className="tag-card">{project.skills}</p>
                 <a
-                  href="https://github.com/tu-usuario" // Cambia este enlace por el tuyo
+                  href={project.link} // Cambia este enlace por el tuyo
                   target="_blank"
                   rel="noopener noreferrer"
                   className="action-card bg-slate-950"
@@ -86,7 +86,7 @@ export default function App() {
       >
         <button
           type="button"
-          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-slate-950 dark:focus:bg-slate-950"
+          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-950 focus:bg-slate-950"
           aria-label="Previous"
           onClick={handlePrevClick}
         >
@@ -94,7 +94,7 @@ export default function App() {
           <span className="sr-only">Previous</span>
         </button>
         <div className="flex items-center gap-x-1">
-          <span className="min-h-[32px] min-w-10 flex justify-center items-center border border-gray-200 text-gray-800 py-1 px-3 text-sm rounded-full focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:border-slate-100 dark:text-white dark:bg-slate-900">
+          <span className="min-h-[32px] min-w-10 flex justify-center items-center border text-slate-50 py-1 px-3 text-sm rounded-full focus:outline-none disabled:opacity-50 disabled:pointer-events-none border-slate-100 bg-slate-900">
             {currentSlide}
           </span>
           <span className="min-h-[32px] flex justify-center items-center text-gray-500 py-1.5 px-1.5 text-sm dark:text-neutral-500">
@@ -106,7 +106,7 @@ export default function App() {
         </div>
         <button
           type="button"
-          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-slate-950 dark:focus:bg-slate-950"
+          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-950 focus:bg-slate-950"
           aria-label="Next"
           onClick={handleNextClick}
         >
