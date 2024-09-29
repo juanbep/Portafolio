@@ -1,9 +1,11 @@
 import { Footer } from "../components";
+import ParticlesComponent from "../hooks/particles";
 import Swiper from "../hooks/swiper";
 
 const Projects = () => {
   return (
     <div className="bg-black-500 w-full h-full">
+      <ParticlesComponent />
       <section className="max-container relative">
         <h1 className="head-text text-white">
           Mis{" "}
