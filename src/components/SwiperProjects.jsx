@@ -1,20 +1,18 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { projects } from "../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
-import CardSunset from "../components/CardSunset";
+import CardSunset from "./CardSunset";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./swiper.css";
-
 import { EffectCoverflow } from "swiper/modules";
 
-export default function App() {
+const SwiperProjects = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const totalSlides = projects.length;
   const swiperRef = useRef(null);
@@ -56,22 +54,38 @@ export default function App() {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="card-swiper bg-slate-50">
-              <div className="info-card">
-                <p className="title-card">{project.name}</p>
-                <p>{project.description} </p>
-              </div>
-              <div className="footer-card bg-slate-900 text-slate-100">
-                <p className="tag-card">{project.skills}</p>
-                <a
-                  href={project.link} // Cambia este enlace por el tuyo
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="action-card bg-slate-950"
-                  aria-label="Open GitHub"
-                >
-                  <FaGithub size={20} />
-                </a>
+            <div class="container">
+              <div class="card">
+                <div class="front">
+                  <p class="heading"> Front Card </p>
+                </div>
+                <div class="back">
+                  <p class="heading">Follow Me</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="100"
+                    fill="currentColor"
+                    class="bi bi-person-add"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+                    <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"></path>
+                  </svg>
+
+                  <div class="icons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-facebook"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>
@@ -116,4 +130,6 @@ export default function App() {
       </nav>
     </>
   );
-}
+};
+
+export default SwiperProjects;

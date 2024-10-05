@@ -3,14 +3,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import ParticlesComponent from "../hooks/particles";
 import { skills, experiences } from "../constants";
-import { Footer } from "../components";
 
 const About = () => {
   return (
-    <div className="bg-black-500 w-full h-full">
-      <ParticlesComponent />
+    <div>
       <section className="max-container relative">
         <h1 className="head-text text-white">
           Hola, Soy{" "}
@@ -132,9 +129,6 @@ const About = () => {
             </VerticalTimeline>
           </div>
         </div>
-        <hr className="border-slate-300" />
-        <br />
-        <Footer />
       </section>
     </div>
   );

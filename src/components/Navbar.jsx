@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState, useRef, memo } from "react";
+import { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { FaUserAstronaut, FaLinkedin, FaDownload } from "react-icons/fa";
 import { GoRocket } from "react-icons/go";
@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillHome, AiOutlineMenu, AiOutlineMessage } from "react-icons/ai";
 import CV from "../assets/documents/JuanDavidBeca-CV.pdf";
 
-const Navbar = memo(() => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
   const nodeRef = useRef(null);
@@ -78,6 +78,7 @@ const Navbar = memo(() => {
                     e.preventDefault();
                     setContactOpen(!contactOpen);
                   }}
+                  aria-expanded={contactOpen}
                 >
                   <AiOutlineMessage
                     className="mr-2 object-contain"
@@ -161,6 +162,6 @@ const Navbar = memo(() => {
       </div>
     </header>
   );
-});
+};
 
 export default Navbar;

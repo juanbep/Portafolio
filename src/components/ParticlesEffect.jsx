@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const App = () => {
+const ParticlesEffect = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -101,4 +101,4 @@ const App = () => {
   return <></>;
 };
 
-export default App;
+export default ParticlesEffect;
