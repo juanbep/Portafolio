@@ -13,11 +13,11 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-body:has(.card[data-color="blue"]:hover) {
+body:has(.card-swiper[data-color="blue"]:hover) {
     background-color: rgb(var(--blue-rgb) / 25%);
 }
 
-body:has(.card[data-color="green"]:hover) {
+body:has(.card-swiper[data-color="green"]:hover) {
     background-color: rgb(var(--green-rgb) / 25%);
 }
 
@@ -207,8 +207,9 @@ body:has(.card[data-color="green"]:hover) {
 
 
 /*swiper component*/
-.swiper {
-    width: 100%;
+
+.swiper-wrapper {
+    height: 25em;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -217,7 +218,6 @@ body:has(.card[data-color="green"]:hover) {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 300px;
 }
 
 .swiper-slide-shadow-left,
@@ -228,134 +228,223 @@ body:has(.card[data-color="green"]:hover) {
 /*swiper component*/
 
 /*swiper card's*/
-.container {
-    height: 100%;
-    width: 100%;
-    color: white;
-    perspective: 800px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
-.card {
-    width: 100%;
-    height: 100%;
-    background: #E5E7EB;
-    border-radius: 2rem;
+.card-swiper {
     position: relative;
-    transition: transform 1500ms;
-    transform-style: preserve-3d;
-}
-
-.card-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10%;
-    position: absolute;
-    width: 50%;
-    background-color: transparent;
-    border: 2px solid black;
-    top: 0;
-    border-top: none;
-    border-radius: 0 0 1rem 1rem;
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.7);
-}
-
-.card-top-para {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.container:hover>.card {
-    cursor: pointer;
-    transform: rotateX(180deg) rotateZ(-180deg);
-}
-
-.front,
-.back {
-    height: 100%;
-    width: 100%;
-    border-radius: 2rem;
-    position: absolute;
-    backface-visibility: hidden;
+    width: 19em;
+    height: 25em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    background-color: #171717;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1em 2em 1em 1em;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    row-gap: 1em;
 }
 
-.back {
-    background-color: black;
-    transform: rotateX(180deg) rotateZ(-180deg);
+.card-swiper::before,
+.card-swiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow:
+        250px 50px #fff, 120px 80px #fff, 250px 110px #fff, 160px 130px #fff,
+        200px 310px #fff, 30px 210px #fff;
+
+    z-index: -1;
+    transition: 1s ease;
+    animation: 1.5s glowing-stars linear alternate infinite;
+    animation-delay: 1s;
+}
+
+.card-swiper::before {
+    box-shadow:
+        190px 80px #fff, 50px 370px #fff, 120px 300px #fff, 180px 30px #fff,
+        50px 300px #fff, 270px 170px #fff, 220px 360px #fff;
+    z-index: -1;
+    transition: 1s ease;
+    animation: 1.5s glowing-stars linear alternate infinite;
+    animation-delay: 0.5s;
 }
 
 .heading {
-    font-size: 22px;
-    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    transition: 0.4s ease-in-out;
 }
 
-.follow {
-    font-size: 16px;
-    font-weight: 500;
+.heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 280px 300px #fff, 165px 380px #fff, 170px 270px #fff, 120px 350px #fff,
+        240px 250px #fff, 120px 240px #fff;
+    z-index: -1;
+    transition: 1s ease;
+    animation: 1.5s glowing-stars linear alternate infinite;
+    animation-delay: 0.5s;
+}
+
+.card-swiper:hover .heading {
+    letter-spacing: 0.025em;
+}
+
+.card-swiper:hover::before,
+.card-swiper:hover::after,
+.card-swiper:hover .heading::before {
+    filter: blur(3px);
+}
+
+.heading::after {
+    content: "";
+    top: -8.5%;
+    left: -8.5%;
+    position: absolute;
+    width: 7.5em;
+    height: 7.5em;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #383838;
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.swiper-slide-active .heading::after {
+    background: #f9f9fb;
+    box-shadow: 0px 0px 100px rgba(193, 119, 241, 0.8),
+        0px 0px 100px rgba(135, 42, 211, 0.8), inset #9b40fc 0px 0px 40px -12px;
+}
+
+.swiper-slide-active .card-swiper:hover .heading::after {
+    box-shadow: 0px 0px 200px rgba(193, 119, 241, 1),
+        0px 0px 200px rgba(135, 42, 211, 1), inset #9b40fc 0px 0px 40px -12px;
 }
 
 .icons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
+    column-gap: 1em;
+    z-index: 1;
 }
 
-
-/*swiper card's*/
-
-/*card sunset*/
-/* .card__sunset {
-    width: 250px;
-    height: 320px;
-    padding: 5px;
-    background-image: linear-gradient(#ca1eb3, #FD2E24, #FFD701 70%);
+.icons svg {
+    width: 20px;
+    height: 20px;
 }
 
-.card__content {
-    background-color: #212121cf;
-    backdrop-filter: blur(50px);
-    width: 100%;
-    height: 100%;
-    padding: 15px;
+/*github icon*/
+
+.github {
+    position: relative;
+    transition: 0.4s ease-in-out;
 }
 
-.card-details {
-    height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
+.github:after {
+    content: "";
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(233, 233, 233, 0.5),
+        0px 0px 10px rgba(192, 192, 192, 0.5);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
 }
 
-.text-body {
-    margin-top: -35px;
-    color: #ff8d79;
-    text-align: center;
+.github svg path {
+    stroke: #ffffff;
+    transition: 0.4s ease-in-out;
 }
 
-.text-title {
-    margin-top: -125px;
-    color: #ff4d7d;
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
+.github:hover svg path {
+    stroke: #000000;
 }
 
-.sunsetsvg {
-    width: 313px;
-    margin-left: -51.9px;
-    margin-top: -165px;
-    fill: black;
+.github svg {
+    transition: 0.3s ease-in-out;
 }
 
-#sun {
-    fill: url(#MyGradient);
-} */
+.github:hover svg {
+    scale: 1.25;
+}
 
-/*card sunset*/
+.github:hover:after {
+    scale: 4;
+    transform: translateX(0.09em) translateY(0.09em);
+}
+
+.github::before {
+    content: "";
+    position: absolute;
+    top: -2100%;
+    left: 850%;
+    rotate: -45deg;
+    width: 5em;
+    height: 1px;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    animation: 4s shootingStar ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.card-swiper:hover .github::before {
+    filter: blur(3px);
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-55em) translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(-70em) translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+}
+
+@keyframes glowing-stars {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*swiper card-swiper's*/

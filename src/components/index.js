@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import HomeInfo from "./HomeInfo";
 import DragHand from "./DragHand";
-import Particles from "./ParticlesEffect";
+import ParticlesEffect from "./ParticlesEffect";
 import SwiperProjects from "./SwiperProjects";
 
 export {
@@ -12,6 +12,6 @@ export {
   Footer,
   HomeInfo,
   DragHand,
-  Particles,
+  ParticlesEffect,
   SwiperProjects,
 };

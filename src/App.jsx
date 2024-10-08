@@ -1,5 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import { Navbar, Footer, Particles } from "./components";
+import { Navbar, Footer, ParticlesEffect } from "./components";
 import { Home, About, Projects } from "./pages";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
             path="/*"
             element={
               <>
-                <Particles />
+                <ParticlesEffect />
                 <Routes>
                   <Route path="/about" element={<About />} />
                   <Route path="/projects" element={<Projects />} />
