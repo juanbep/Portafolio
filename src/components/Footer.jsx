@@ -12,7 +12,7 @@ const Footer = () => {
           <h4 className="font-semibold text-slate-50">Inspired by:</h4>
           <a
             href="https://www.joshuas.world/"
-            className="underline pb-2 text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+            className="underline text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="joshuas.world website"
@@ -22,7 +22,7 @@ const Footer = () => {
           <h4 className="font-semibold text-slate-50">Thanks to:</h4>
           <a
             href="https://www.youtube.com/c/javascriptmastery"
-            className="underline text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+            className="underline text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="javascript mastery youtube channel"
@@ -36,7 +36,7 @@ const Footer = () => {
           role="contentinfo"
         >
           <h4 className="font-semibold text-slate-50">Designed by:</h4>
-          <p className="text-slate-100 pb-2">Juan David Beca</p>
+          <p className="text-slate-100">Juan David Beca</p>
           <div className="hover:text-blue-700">
             <a
               href="https://github.com/juanbep"
@@ -45,7 +45,7 @@ const Footer = () => {
               aria-label="Enlace a GitHub"
             >
               <FaGithub
-                className="h-6 w-6 object-contain text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+                className="h-6 w-6 object-contain text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
                 aria-hidden="false"
                 aria-label="GitHub"
               />
@@ -57,12 +57,10 @@ const Footer = () => {
           className="flex-1 flex flex-col items-center sm:items-end"
           role="contentinfo"
         >
-          <h4 className="font-semibold pb-2 text-slate-50">
-            3D model's credits:
-          </h4>
+          <h4 className="font-semibold text-slate-50">3D model's credits:</h4>
           <a
             href="https://sketchfab.com/3d-models/blackhole-32f978d0e7354af293fa498f2998b14c"
-            className="underline text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+            className="underline text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model Blackhole"
@@ -71,7 +69,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/space-boi-f6a8c6a6727b4f2cb020c8b50bb2ee60"
-            className="underline text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+            className="underline text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D model space boi"
@@ -80,7 +78,7 @@ const Footer = () => {
           </a>
           <a
             href="https://sketchfab.com/3d-models/x-wing-04b0147bd4234e61ba21bbf7a73ceecc"
-            className="underline text-slate-50 hover:text-slate-500 transition-colors duration-200 ease-in-out"
+            className="underline text-slate-50 hover:text-slate-950 transition-colors duration-200 ease-in-out"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="3D X-WING"

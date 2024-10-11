@@ -25,7 +25,7 @@ import {
   oracle,
   laravel,
   symfony,
-  dev,
+  rocket,
 } from "../assets/icons";
 
 export const skills = [
@@ -116,7 +116,7 @@ export const skills = [
   {
     imageUrl: docker,
     name: "Docker",
-    type: "DevOps",
+    type: "rocketOps",
     percentage: "30%",
   },
   {
@@ -210,7 +210,7 @@ export const experiences = [
   {
     title: "Desarrollador Freelance",
     company_name: "Autónomo",
-    icon: dev,
+    icon: rocket,
     iconBg: "#f0f4f8",
     date: "ene. 2023 - presente",
     points: [

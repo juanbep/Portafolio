@@ -4,6 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { skills, experiences } from "../constants";
+import { FaCode } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -126,6 +127,10 @@ const About = () => {
                   ))}
                 </VerticalTimelineElement>
               ))}
+              <VerticalTimelineElement
+                iconStyle={{ background: "rgb(2 6 23)", color: "#fff" }}
+                icon={<FaCode />}
+              />
             </VerticalTimeline>
           </div>
         </div>

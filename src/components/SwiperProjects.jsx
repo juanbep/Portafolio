@@ -52,7 +52,7 @@ const SwiperProjects = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="card-swiper">
+            <div className="card-swiper glowing-stars">
               <div className="heading">{project.name}</div>
               <div className="icons">
                 <a href="#" className="github">
@@ -69,7 +69,7 @@ const SwiperProjects = () => {
       >
         <button
           type="button"
-          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-500 focus:bg-slate-500 transition-colors duration-200 ease-in-out"
+          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-950 focus:bg-slate-950 transition-colors duration-200 ease-in-out"
           aria-label="Previous"
           onClick={handlePrevClick}
         >
@@ -77,7 +77,7 @@ const SwiperProjects = () => {
           <span className="sr-only">Previous</span>
         </button>
         <div className="flex items-center gap-x-1">
-          <span className="min-h-[32px] min-w-10 flex justify-center items-center border text-slate-50 py-1 px-3 text-sm rounded-full focus:outline-none disabled:opacity-50 disabled:pointer-events-none border-slate-50 bg-slate-800">
+          <span className="min-h-[32px] min-w-10 flex justify-center items-center border text-slate-50 py-1 px-3 text-sm rounded-full focus:outline-none disabled:opacity-50 disabled:pointer-events-none border-slate-50 bg-slate-900">
             {currentSlide}
           </span>
           <span className="min-h-[32px] flex justify-center items-center text-gray-500 py-1.5 px-1.5 text-sm dark:text-neutral-500">
@@ -89,7 +89,7 @@ const SwiperProjects = () => {
         </div>
         <button
           type="button"
-          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-500 focus:bg-slate-500 transition-colors duration-200 ease-in-out"
+          className="min-h-[32px] min-w-8 py-2 px-2 inline-flex justify-center items-center gap-x-2 text-sm rounded-full text-slate-50 focus:outline-none disabled:opacity-50 disabled:pointer-events-none  hover:bg-slate-950 focus:bg-slate-950 transition-colors duration-200 ease-in-out"
           aria-label="Next"
           onClick={handleNextClick}
         >
