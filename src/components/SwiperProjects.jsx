@@ -52,12 +52,24 @@ const SwiperProjects = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="card-swiper glowing-stars">
-              <div className="heading">{project.name}</div>
-              <div className="icons">
-                <a href="#" className="github">
-                  <FiGithub />
-                </a>
+            <div className="container-card-swiper">
+              <div className="card-swiper glowing-stars">
+                <div className="front">
+                  <div className="heading">{project.name}</div>
+                  <div className="icons">
+                    <a href="#" className="github">
+                      <FiGithub />
+                    </a>
+                  </div>
+                </div>
+                <div className="back">
+                  <div className="heading">Este es el back</div>
+                  <div className="icons">
+                    <a href="#" className="github">
+                      <FiGithub />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>

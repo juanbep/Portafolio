@@ -208,12 +208,26 @@ body:has(.card-swiper[data-color="green"]:hover) {
     display: none;
 }
 
-/*swiper component*/
-
 /*swiper card's*/
+
+.container-card-swiper {
+    perspective: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .card-swiper {
     position: relative;
+    width: 19em;
+    height: 25em;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    position: absolute;
     width: 19em;
     height: 25em;
     display: flex;
@@ -229,6 +243,16 @@ body:has(.card-swiper[data-color="green"]:hover) {
     overflow: hidden;
     z-index: 1;
     row-gap: 1em;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateX(180deg) rotateZ(-180deg);
+}
+
+.container-card-swiper:hover .card-swiper {
+    cursor: pointer;
+    transform: rotateX(180deg) rotateZ(-180deg);
 }
 
 .card-swiper::before,
@@ -264,6 +288,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
     text-align: center;
     z-index: 2;
     transition: 0.4s ease-in-out;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .heading::before {
@@ -284,15 +309,15 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 0.3s;
 }
 
-.card-swiper:hover .heading {
+/* .card-swiper:hover .heading {
     letter-spacing: 0.025em;
-}
+} */
 
-.card-swiper:hover::before,
+/* .card-swiper:hover::before,
 .card-swiper:hover::after,
 .card-swiper:hover .heading::before {
     filter: blur(3px);
-}
+} */
 
 .heading::after {
     content: "";
@@ -304,28 +329,33 @@ body:has(.card-swiper[data-color="green"]:hover) {
     border: none;
     outline: none;
     border-radius: 50%;
-    background: #383838;
+    background: #2c2c2c;
     transition: 0.4s ease-in-out;
     z-index: -1;
 }
 
 .swiper-slide-active .heading::after {
-    background: #f9f9fb;
-    box-shadow: 0px 0px 100px rgba(193, 119, 241, 0.8),
-        0px 0px 100px rgba(135, 42, 211, 0.8), inset #9b40fc 0px 0px 40px -12px;
+    background: white;
+    box-shadow:
+        0px 0px 100px rgba(173, 216, 230, 0.6),
+        0px 0px 150px rgba(255, 255, 255, 0.7),
+        inset 0px 0px 40px -12px rgba(200, 200, 200, 0.5);
 }
 
 .swiper-slide-active .card-swiper:hover .heading::after {
-    box-shadow: 0px 0px 200px rgba(193, 119, 241, 1),
-        0px 0px 200px rgba(135, 42, 211, 1), inset #9b40fc 0px 0px 40px -12px;
+    box-shadow:
+        0px 0px 200px rgba(173, 216, 230, 0.8),
+        0px 0px 250px rgba(255, 255, 255, 1),
+        inset 0px 0px 60px -12px rgba(200, 200, 200, 0.7);
 }
 
 .icons {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    column-gap: 1em;
     z-index: 1;
 }
 
@@ -346,7 +376,8 @@ body:has(.card-swiper[data-color="green"]:hover) {
     position: absolute;
     width: 0.5em;
     height: 0.5em;
-    left: 0;
+    top: -0.45em;
+    left: -0.2em;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(233, 233, 233, 0.5),
         0px 0px 10px rgba(192, 192, 192, 0.5);
@@ -380,13 +411,13 @@ body:has(.card-swiper[data-color="green"]:hover) {
 .github::before {
     content: "";
     position: absolute;
-    top: -2100%;
+    top: -1500%;
     left: 850%;
     rotate: -45deg;
     width: 5em;
     height: 1px;
     background: linear-gradient(90deg, #ffffff, transparent);
-    animation: 2s shootingStar ease-in-out infinite;
+    animation: 3s shootingStar ease-in-out infinite;
     animation-delay: 5s;
 }
 
