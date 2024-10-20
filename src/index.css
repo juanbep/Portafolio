@@ -192,7 +192,6 @@ body:has(.card-swiper[data-color="green"]:hover) {
 /*swiper component*/
 
 .swiper-wrapper {
-    height: 25em;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -210,33 +209,34 @@ body:has(.card-swiper[data-color="green"]:hover) {
 
 /*swiper card's*/
 
-.container-card-swiper {
-    perspective: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card-swiper-container {
+    cursor: pointer;
+}
+
+.card-swiper-container:hover .card-swiper {
+    transform: rotateX(180deg) rotateZ(-180deg);
 }
 
 .card-swiper {
     position: relative;
-    width: 19em;
-    height: 25em;
+    width: 300px;
+    height: 400px;
     transition: transform 1500ms;
     transform-style: preserve-3d;
 }
 
-.front,
-.back {
+.card-swiper-front,
+.card-swiper-back {
     position: absolute;
-    width: 19em;
-    height: 25em;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #171717;
     color: white;
-    font-family: Montserrat;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-weight: bold;
     padding: 1em 2em 1em 1em;
     border-radius: 20px;
@@ -246,17 +246,8 @@ body:has(.card-swiper[data-color="green"]:hover) {
     backface-visibility: hidden;
 }
 
-.back {
-    transform: rotateX(180deg) rotateZ(-180deg);
-}
-
-.container-card-swiper:hover .card-swiper {
-    cursor: pointer;
-    transform: rotateX(180deg) rotateZ(-180deg);
-}
-
-.card-swiper::before,
-.card-swiper::after {
+.card-swiper-front::before,
+.card-swiper-back::before {
     content: "";
     position: absolute;
     top: 0;
@@ -274,7 +265,16 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 1.2s;
 }
 
-.card-swiper::before {
+.card-swiper-front::after,
+.card-swiper-back::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
     box-shadow:
         50px 370px #fff, 240px 250px #fff, 170px 270px #fff, 180px 30px #fff,
         250px 110px #fff, 165px 380px #fff, 220px 360px #fff;
@@ -284,11 +284,14 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 0.6s;
 }
 
+.card-swiper-back {
+    transform: rotateX(180deg) rotateZ(-180deg);
+}
+
 .heading {
     text-align: center;
     z-index: 2;
     transition: 0.4s ease-in-out;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .heading::before {
@@ -366,7 +369,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
 
 /*github icon*/
 
-.github {
+/* .github {
     position: relative;
     transition: 0.4s ease-in-out;
 }
@@ -423,7 +426,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
 
 .card-swiper:hover .github::before {
     filter: blur(3px);
-}
+} */
 
 @keyframes shootingStar {
     0% {

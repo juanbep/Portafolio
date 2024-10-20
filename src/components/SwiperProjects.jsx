@@ -52,9 +52,9 @@ const SwiperProjects = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="container-card-swiper">
+            <div className="card-swiper-container">
               <div className="card-swiper glowing-stars">
-                <div className="front">
+                <div className="card-swiper-front">
                   <div className="heading">{project.name}</div>
                   <div className="icons">
                     <a href="#" className="github">
@@ -62,7 +62,7 @@ const SwiperProjects = () => {
                     </a>
                   </div>
                 </div>
-                <div className="back">
+                <div className="card-swiper-back">
                   <div className="heading">Este es el back</div>
                   <div className="icons">
                     <a href="#" className="github">
