@@ -209,11 +209,11 @@ body:has(.card-swiper[data-color="green"]:hover) {
 
 /*swiper card's*/
 
-.card-swiper-container {
+.swiper-slide-active .card-swiper-container {
     cursor: pointer;
 }
 
-.card-swiper-container:hover .card-swiper {
+.swiper-slide-active .card-swiper-container:hover .card-swiper {
     transform: rotateX(180deg) rotateZ(-180deg);
 }
 
@@ -320,7 +320,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
 .card-swiper:hover::after,
 .card-swiper:hover .heading::before {
     filter: blur(3px);
-} */
+}  */
 
 .heading::after {
     content: "";
@@ -340,12 +340,12 @@ body:has(.card-swiper[data-color="green"]:hover) {
 .swiper-slide-active .heading::after {
     background: white;
     box-shadow:
-        0px 0px 100px rgba(173, 216, 230, 0.6),
-        0px 0px 150px rgba(255, 255, 255, 0.7),
+        0px 0px 50px rgba(173, 216, 230, 0.6),
+        0px 0px 100px rgba(255, 255, 255, 0.7),
         inset 0px 0px 40px -12px rgba(200, 200, 200, 0.5);
 }
 
-.swiper-slide-active .card-swiper:hover .heading::after {
+.swiper-slide-active .card-swiper-back .heading::after {
     box-shadow:
         0px 0px 200px rgba(173, 216, 230, 0.8),
         0px 0px 250px rgba(255, 255, 255, 1),
@@ -365,56 +365,56 @@ body:has(.card-swiper[data-color="green"]:hover) {
 .icons svg {
     width: 20px;
     height: 20px;
+    transition: 0.4s ease-in-out;
 }
 
 /*github icon*/
 
-/* .github {
+.github {
     position: relative;
-    transition: 0.4s ease-in-out;
 }
 
-.github:after {
+.github::after {
     content: "";
     position: absolute;
     width: 0.5em;
     height: 0.5em;
-    top: -0.45em;
-    left: -0.2em;
+    top: 0.2em;
+    left: 0.4em;
+    scale: 4;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(233, 233, 233, 0.5),
-        0px 0px 10px rgba(192, 192, 192, 0.5);
     border-radius: 50%;
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
 
+.swiper-slide-active .github::after {
+    box-shadow: 0px 0px 3px rgba(233, 233, 233, 0.5),
+        0px 0px 3px rgba(192, 192, 192, 0.5);
+}
+
+.swiper-slide-active .github:hover::after {
+    box-shadow: 0px 0px 10px rgba(233, 233, 233, 0.5),
+        0px 0px 10px rgba(192, 192, 192, 0.5);
+}
+
+/* .github:hover svg {
+    transform: scale(1.25);
+} */
+
 .github svg path {
-    stroke: #ffffff;
-    transition: 0.4s ease-in-out;
-}
-
-.github:hover svg path {
     stroke: #000000;
+    transition: stroke 0.4s ease-in-out;
 }
 
-.github svg {
-    transition: 0.3s ease-in-out;
-}
+/* .github:hover svg path {
+    stroke: #ffffff;
+} */
 
-.github:hover svg {
-    scale: 1.25;
-}
-
-.github:hover:after {
-    scale: 4;
-    transform: translateX(0.09em) translateY(0.09em);
-}
-
-.github::before {
+.swiper-slide-active .github::before {
     content: "";
     position: absolute;
-    top: -1500%;
+    top: -2500%;
     left: 850%;
     rotate: -45deg;
     width: 5em;
@@ -424,9 +424,9 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 5s;
 }
 
-.card-swiper:hover .github::before {
+/* .card-swiper:hover .github::before {
     filter: blur(3px);
-} */
+}  */
 
 @keyframes shootingStar {
     0% {
