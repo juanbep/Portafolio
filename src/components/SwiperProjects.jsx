@@ -63,9 +63,9 @@ const SwiperProjects = () => {
                   </div>
                 </div>
                 <div className="card-swiper-back">
-                  <div className="heading">Este es el back</div>
+                  <div className="heading">{project.description}</div>
                   <div className="icons">
-                    <a href="#" className="github">
+                    <a href={project.link} className="github">
                       <FiGithub />
                     </a>
                   </div>
