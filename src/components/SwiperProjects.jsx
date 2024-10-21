@@ -57,15 +57,23 @@ const SwiperProjects = () => {
                 <div className="card-swiper-front">
                   <div className="heading">{project.name}</div>
                   <div className="icons">
-                    <a href="#" className="github">
+                    <div className="github">
                       <FiGithub />
-                    </a>
+                    </div>
                   </div>
                 </div>
                 <div className="card-swiper-back">
                   <div className="heading">{project.description}</div>
+                  <p class="px-3 py-1 text-[12px] max-w-max rounded font-semibold text-[#7281a3]">
+                    {project.skills}
+                  </p>
                   <div className="icons">
-                    <a href={project.link} className="github">
+                    <a
+                      href={project.link}
+                      className="github"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FiGithub />
                     </a>
                   </div>

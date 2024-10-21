@@ -289,8 +289,8 @@ body:has(.card-swiper[data-color="green"]:hover) {
 }
 
 .card-swiper-back .heading {
-    max-height: 200px; 
-    overflow-y: auto; 
+    max-height: 200px;
+    overflow-y: auto;
     text-align: left;
     font-size: small;
     z-index: 2;
@@ -298,7 +298,16 @@ body:has(.card-swiper[data-color="green"]:hover) {
 }
 
 .card-swiper-back .heading::-webkit-scrollbar {
-    
+    width: 5px;
+}
+
+.card-swiper-back .heading::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.card-swiper-back .heading::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
 
 .heading {

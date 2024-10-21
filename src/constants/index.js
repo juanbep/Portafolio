@@ -255,7 +255,7 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Gastronomía sostenible: Estrategias para Minimizar el Desperdicio de Alimentos en el sector gastronómico.",
-    skills: "#Python, #Pandas, #NumPy, #Matplotlib",
+    skills: "#Python, #Pandas, #NumPy, #Matplotlib, #PowerBI",
     description:
       "Participé en el desarrollo de un sistema de análisis de datos que utiliza un conjunto de técnicas de nivel intermedio aprendidas en el bootcamp del programa del ministerio de las TIC Talento Tech. El objetivo de este proyecto es poder estimar la demanda de alimentos en establecimientos del sector gastronómico. Funciona recopilando y analizando datos históricos y actuales, incluyendo patrones de consumo, eventos especiales, condiciones climáticas, tendencias del mercado, etc.",
     link: "https://github.com/juanbep",
