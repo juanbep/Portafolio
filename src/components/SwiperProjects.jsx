@@ -62,15 +62,21 @@ const SwiperProjects = () => {
                 </div>
                 <div className="card-swiper-back">
                   <div className="heading">{project.description}</div>
-                  <div className="skills">
-                    {project.skills.map((skill, index) => (
-                      <p
-                        key={index}
-                        className="px-3 py-1 text-[12px] rounded font-semibold text-[#7281a3] bg-[#e2e8f0] inline-block"
-                      >
-                        {skill}
-                      </p>
-                    ))}
+                  <div className="-bottom-5 relative flex overflow-x-hidden">
+                    <div className="py-2 animate-marquee whitespace-nowrap">
+                      {project.skills.map((skill, index) => (
+                        <span key={index} className="text-base mx-4">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="absolute top-0 py-2 animate-marquee2 whitespace-nowrap">
+                      {project.skills.map((skill, index) => (
+                        <span key={index} className="text-base mx-4">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                   <div className="icons">
                     <a
