@@ -226,8 +226,17 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Sitio web de comercio electrónico.",
-    skills:
-      "#PHP, #Symfony, #JavaScript, #JWT, #bcrypt, #APIs, #Git, #Nginx, #Docker",
+    skills: [
+      "PHP",
+      "Symfony",
+      "JavaScript",
+      "JWT",
+      "bcrypt",
+      "APIs",
+      "Git",
+      "Nginx",
+      "Docker",
+    ],
     description:
       "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
     link: "https://github.com/juanbep",
@@ -236,8 +245,16 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Sistema de Reservas para Instalaciones Deportivas Universitarias.",
-    skills:
-      "#Java 11, #Spring Boot, #Angular 13, #Docker, #JUnit 5, #Mockito, #MySQL, #Google Maps API.",
+    skills: [
+      "Java 11",
+      "Spring Boot",
+      "Angular 13",
+      "Docker",
+      "JUnit 5",
+      "Mockito",
+      "MySQL",
+      "Google Maps API",
+    ],
     description:
       "Participé en el desarrollo de una aplicación web para la gestión de reservas de las instalaciones deportivas de la Universidad del Cauca. La aplicación debe permitir a los usuarios reservar espacios deportivos, consultar disponibilidad, y gestionar sus reservas de manera eficiente.",
     link: "https://github.com/juanbep",
@@ -246,7 +263,7 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Sistema de Administración de Inventarios y Usuarios en JavaFX.",
-    skills: "#Java 8, #JavaFX, #PostgreSQL, #JPA, #JUnit",
+    skills: ["Java 8", "JavaFX", "PostgreSQL", "JPA", "JUnit"],
     description:
       "Sitio web de comercio electrónico desarrollado en PHP con Symfony Framework, implementa las características principales de este tipo de servicios, como: Carrito de compras, Proceso de compra, Gestión de usuarios, Gestión de inventarios, Administración de contenido, Seguridad, etc.",
     link: "https://github.com/juanbep",
@@ -255,7 +272,7 @@ export const projects = [
     iconUrl: unicauca,
     theme: "btn-back-red",
     name: "Gastronomía sostenible: Estrategias para Minimizar el Desperdicio de Alimentos en el sector gastronómico.",
-    skills: "#Python, #Pandas, #NumPy, #Matplotlib, #PowerBI",
+    skills: ["Python", "Pandas", "NumPy", "Matplotlib", "PowerBI"],
     description:
       "Participé en el desarrollo de un sistema de análisis de datos que utiliza un conjunto de técnicas de nivel intermedio aprendidas en el bootcamp del programa del ministerio de las TIC Talento Tech. El objetivo de este proyecto es poder estimar la demanda de alimentos en establecimientos del sector gastronómico. Funciona recopilando y analizando datos históricos y actuales, incluyendo patrones de consumo, eventos especiales, condiciones climáticas, tendencias del mercado, etc.",
     link: "https://github.com/juanbep",

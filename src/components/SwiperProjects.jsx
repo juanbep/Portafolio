@@ -56,17 +56,22 @@ const SwiperProjects = () => {
               <div className="card-swiper glowing-stars">
                 <div className="card-swiper-front">
                   <div className="heading">{project.name}</div>
-                  <div className="icons">
-                    <div className="github">
-                      <FiGithub />
-                    </div>
+                  <div data-glitch="Touch" className="glitch">
+                    Touch
                   </div>
                 </div>
                 <div className="card-swiper-back">
                   <div className="heading">{project.description}</div>
-                  <p class="px-3 py-1 text-[12px] max-w-max rounded font-semibold text-[#7281a3]">
-                    {project.skills}
-                  </p>
+                  <div className="skills">
+                    {project.skills.map((skill, index) => (
+                      <p
+                        key={index}
+                        className="px-3 py-1 text-[12px] rounded font-semibold text-[#7281a3] bg-[#e2e8f0] inline-block"
+                      >
+                        {skill}
+                      </p>
+                    ))}
+                  </div>
                   <div className="icons">
                     <a
                       href={project.link}

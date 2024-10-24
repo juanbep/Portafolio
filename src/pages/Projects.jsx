@@ -12,7 +12,10 @@ const Projects = () => {
         </h1>
 
         <p className="text-slate-500 mt-2 leading-relaxed font-mono">
-          
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          ullam? Ex nisi vero tempora voluptate enim architecto vel voluptas
+          voluptates at, sed distinctio, provident dolore hic ullam, ad
+          asperiores animi!
         </p>
         <SwiperProjects />
       </section>

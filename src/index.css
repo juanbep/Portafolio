@@ -238,7 +238,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
     color: white;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-weight: bold;
-    padding: 1em 2em 1em 1em;
+    padding: 1em 1em 1em 1em;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;
@@ -334,17 +334,7 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 0.3s;
 }
 
-/* .card-swiper:hover .heading {
-    letter-spacing: 0.025em;
-} */
-
-/* .card-swiper:hover::before,
-.card-swiper:hover::after,
-.card-swiper:hover .heading::before {
-    filter: blur(3px);
-}  */
-
-.heading::after {
+.card-swiper-front .heading::after {
     content: "";
     top: -8.5%;
     left: -8.5%;
@@ -359,19 +349,10 @@ body:has(.card-swiper[data-color="green"]:hover) {
     z-index: -1;
 }
 
-.swiper-slide-active .heading::after {
-    background: white;
-    box-shadow:
-        0px 0px 50px rgba(173, 216, 230, 0.6),
-        0px 0px 100px rgba(255, 255, 255, 0.7),
-        inset 0px 0px 40px -12px rgba(200, 200, 200, 0.5);
-}
-
-.swiper-slide-active .card-swiper-back .heading::after {
-    box-shadow:
-        0px 0px 200px rgba(173, 216, 230, 0.8),
-        0px 0px 250px rgba(255, 255, 255, 1),
-        inset 0px 0px 60px -12px rgba(200, 200, 200, 0.7);
+.swiper-slide-active .card-swiper-front .heading::after {
+    background: #ffffff;
+    box-shadow: 0px 0px 100px rgba(193, 119, 241, 0.8),
+        0px 0px 100px rgba(135, 42, 211, 0.8), inset #9b40fc 0px 0px 40px -12px;
 }
 
 .icons {
@@ -421,10 +402,6 @@ body:has(.card-swiper[data-color="green"]:hover) {
         0px 0px 10px rgba(192, 192, 192, 0.5);
 }
 
-/* .github:hover svg {
-    transform: scale(1.25);
-} */
-
 .github svg path {
     stroke: #4d4d4d;
     transition: stroke 0.4s ease-in-out;
@@ -433,11 +410,6 @@ body:has(.card-swiper[data-color="green"]:hover) {
 .swiper-slide-active .github svg path {
     stroke: #000000;
 }
-
-
-/* .github:hover svg path {
-    stroke: #ffffff;
-} */
 
 .swiper-slide-active .github::before {
     content: "";
@@ -452,9 +424,11 @@ body:has(.card-swiper[data-color="green"]:hover) {
     animation-delay: 5s;
 }
 
-/* .card-swiper:hover .github::before {
-    filter: blur(3px);
-}  */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 
 @keyframes shootingStar {
     0% {
@@ -493,3 +467,111 @@ body:has(.card-swiper[data-color="green"]:hover) {
 }
 
 /*swiper card-swiper's*/
+
+.glitch {
+    display: none;
+}
+
+.swiper-slide-active .glitch {
+    display: block;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+    animation: shift 1s ease-in-out infinite alternate;
+    bottom: -5rem
+}
+
+.glitch:before,
+.glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.glitch:before {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #8b00ff;
+    z-index: -1;
+}
+
+.glitch:after {
+    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #00e571;
+    z-index: -2;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-3px, 3px);
+    }
+
+    40% {
+        transform: translate(-3px, -3px);
+    }
+
+    60% {
+        transform: translate(3px, 3px);
+    }
+
+    80% {
+        transform: translate(3px, -3px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes shift {
+
+    0%,
+    40%,
+    44%,
+    58%,
+    61%,
+    65%,
+    69%,
+    73%,
+    100% {
+        transform: skewX(0deg);
+    }
+
+    41% {
+        transform: skewX(10deg);
+    }
+
+    42% {
+        transform: skewX(-10deg);
+    }
+
+    59% {
+        transform: skewX(40deg) skewY(10deg);
+    }
+
+    60% {
+        transform: skewX(-40deg) skewY(-10deg);
+    }
+
+    63% {
+        transform: skewX(10deg) skewY(-5deg);
+    }
+
+    70% {
+        transform: skewX(-50deg) skewY(-20deg);
+    }
+
+    71% {
+        transform: skewX(10deg) skewY(-10deg);
+    }
+}
