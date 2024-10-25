@@ -62,17 +62,17 @@ const SwiperProjects = () => {
                 </div>
                 <div className="card-swiper-back">
                   <div className="heading">{project.description}</div>
-                  <div className="-bottom-5 relative flex overflow-x-hidden">
+                  <div className="skills">
                     <div className="py-2 animate-marquee whitespace-nowrap">
                       {project.skills.map((skill, index) => (
-                        <span key={index} className="text-base mx-4">
+                        <span key={index} className="text-xs mx-4">
                           {skill}
                         </span>
                       ))}
                     </div>
                     <div className="absolute top-0 py-2 animate-marquee2 whitespace-nowrap">
                       {project.skills.map((skill, index) => (
-                        <span key={index} className="text-base mx-4">
+                        <span key={index} className="text-xs mx-4">
                           {skill}
                         </span>
                       ))}

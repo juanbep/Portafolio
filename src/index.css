@@ -289,12 +289,12 @@ body:has(.card-swiper[data-color="green"]:hover) {
 }
 
 .card-swiper-back .heading {
-    max-height: 200px;
+    height: 200px;
     overflow-y: auto;
     text-align: left;
-    font-size: small;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     z-index: 2;
-    transition: 0.4s ease-in-out;
 }
 
 .card-swiper-back .heading::-webkit-scrollbar {
@@ -425,9 +425,15 @@ body:has(.card-swiper[data-color="green"]:hover) {
 }
 
 .skills {
+    bottom: -0.5rem;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    overflow-x: hidden;
+    background: linear-gradient(45deg,
+            /* dirección del degradado */
+            rgba(193, 119, 241, 0.8),
+            rgba(135, 42, 211, 0.8),
+            #9b40fc);
 }
 
 @keyframes shootingStar {
